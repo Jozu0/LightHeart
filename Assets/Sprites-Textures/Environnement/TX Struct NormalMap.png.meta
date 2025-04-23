@@ -1,37 +1,37 @@
 fileFormatVersion: 2
-guid: 8bd1d41a06064da44bdbfd6660a67006
+guid: 6e2d04779d3c614438bda2f3554f00ff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5380237423685108026
-    second: TX Struct_0
+      213: -1166343469849095838
+    second: TX Struct NormalMap_0
   - first:
-      213: 141675554456027117
-    second: TX Struct_1
+      213: -7290463903639756227
+    second: TX Struct NormalMap_1
   - first:
-      213: 5869078902113103909
-    second: TX Struct_2
+      213: 595768618137695750
+    second: TX Struct NormalMap_2
   - first:
-      213: -7381738133999487609
-    second: TX Struct_3
+      213: -5927976617661786553
+    second: TX Struct NormalMap_3
   - first:
-      213: -510105923369629673
-    second: TX Struct_4
+      213: 3228963513639906866
+    second: TX Struct NormalMap_4
   - first:
-      213: -2677049488981355681
-    second: TX Struct_5
+      213: 1080893393195221565
+    second: TX Struct NormalMap_5
   - first:
-      213: -3684389700825655485
-    second: TX Struct_6
+      213: 9011812301590573106
+    second: TX Struct NormalMap_6
   - first:
-      213: -5664187630041763615
-    second: TX Struct_7
+      213: 3784306080695183388
+    second: TX Struct NormalMap_7
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -72,13 +72,13 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 1
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -86,14 +86,14 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
+  ignorePngGamma: 1
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 128
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -134,7 +134,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TX Struct_0
+      name: TX Struct NormalMap_10
       rect:
         serializedVersion: 2
         x: 384
@@ -147,38 +147,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6ce7cf1a19e8555b0800000000000000
-      internalID: -5380237423685108026
+      spriteID: 777167b719cb694459eeda9aa48825c2
+      internalID: 2112048593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_1
-      rect:
-        serializedVersion: 2
-        x: 416
-        y: 480
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: def35b88a2557f100800000000000000
-      internalID: 141675554456027117
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Struct_2
+      name: TX Struct NormalMap_12
       rect:
         serializedVersion: 2
         x: 448
@@ -191,16 +169,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 520f03f6a28237150800000000000000
-      internalID: 5869078902113103909
+      spriteID: 8cb46c6af82bc8c4680d81114d62ddce
+      internalID: -1428415475
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_3
+      name: TX Struct NormalMap_13
       rect:
         serializedVersion: 2
         x: 480
@@ -213,16 +191,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 785710af64cce8990800000000000000
-      internalID: -7381738133999487609
+      spriteID: d16904ad04b52424d8980b880431ed37
+      internalID: -1252624376
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_4
+      name: TX Struct NormalMap_15
       rect:
         serializedVersion: 2
         x: 32
@@ -235,16 +213,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7180bb78d5dbbe8f0800000000000000
-      internalID: -510105923369629673
+      spriteID: dbb661de3ca318844a76640df2e428cb
+      internalID: 410407697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_5
+      name: TX Struct NormalMap_16
       rect:
         serializedVersion: 2
         x: 64
@@ -257,38 +235,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f5310236ca539dad0800000000000000
-      internalID: -2677049488981355681
+      spriteID: 3fab96fff5e9823479d72e01f6306e7f
+      internalID: 2090176668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_6
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 448
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 347dd2c761b6edcc0800000000000000
-      internalID: -3684389700825655485
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Struct_7
+      name: TX Struct NormalMap_19
       rect:
         serializedVersion: 2
         x: 160
@@ -301,38 +257,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1e0f2325c53c461b0800000000000000
-      internalID: -5664187630041763615
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Struct_9
-      rect:
-        serializedVersion: 2
-        x: 224
-        y: 448
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9c3c711f7f2c2548b44d1741b4deeab
-      internalID: 1256520498
+      spriteID: 587ff8dff4f312f45916fd87ab20cae4
+      internalID: -1003261187
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_10
+      name: TX Struct NormalMap_22
       rect:
         serializedVersion: 2
         x: 256
@@ -347,14 +281,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2902c49967ca32469af03c955e1bd00
-      internalID: 1138164176
+      spriteID: b14835e4203eb7145918915c54aa7472
+      internalID: -1129367687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_12
+      name: TX Struct NormalMap_25
       rect:
         serializedVersion: 2
         x: 416
@@ -369,14 +303,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0a43bb3aa840274489d58f235fbcf0a4
-      internalID: 623581191
+      spriteID: 9984d0faf1b51dc43959bf3379ddcd80
+      internalID: 1115707418
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_13
+      name: TX Struct NormalMap_26
       rect:
         serializedVersion: 2
         x: 448
@@ -391,14 +325,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aab808c64dc9f4644b8f8668844550e4
-      internalID: 207906442
+      spriteID: 8c6caaf300834134cab7186b4fa70c3d
+      internalID: 1368768928
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_14
+      name: TX Struct NormalMap_29
       rect:
         serializedVersion: 2
         x: 32
@@ -413,14 +347,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1dcdd58318081784c83b51468bdf22fc
-      internalID: 1794769752
+      spriteID: 52f64de84304e0d4d837da6df1c998d8
+      internalID: 829941427
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_15
+      name: TX Struct NormalMap_30
       rect:
         serializedVersion: 2
         x: 64
@@ -435,14 +369,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66ee79e98bd93e42aa0b092b623b79f
-      internalID: -132854063
+      spriteID: f4f545b963d597c4589279a2e3b0ebb1
+      internalID: 388765338
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_16
+      name: TX Struct NormalMap_32
       rect:
         serializedVersion: 2
         x: 128
@@ -457,14 +391,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8922b17a94bcf9e4897baae906ccb213
-      internalID: -701822719
+      spriteID: a46891327b887e141862bad5501a8b08
+      internalID: -1307766219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_17
+      name: TX Struct NormalMap_33
       rect:
         serializedVersion: 2
         x: 160
@@ -479,14 +413,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 355fb6e8cf8cfdc4eaf726c4da4d8d2c
-      internalID: -625893824
+      spriteID: 58d48cbea739ac84cbf79974c5a84e24
+      internalID: 445396027
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_19
+      name: TX Struct NormalMap_35
       rect:
         serializedVersion: 2
         x: 224
@@ -501,14 +435,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d55847cc627f4641972f858843b290c
-      internalID: 466118107
+      spriteID: 6e794bba4f4b574439195be6ce2db6ba
+      internalID: 1963242081
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_20
+      name: TX Struct NormalMap_36
       rect:
         serializedVersion: 2
         x: 256
@@ -523,14 +457,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 869423fb7d04f5947a78b756588566e9
-      internalID: 399351585
+      spriteID: 37f26b02c4d51534598fecff7dd09be4
+      internalID: -1298036203
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_22
+      name: TX Struct NormalMap_39
       rect:
         serializedVersion: 2
         x: 416
@@ -545,14 +479,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8170089c796cfe145b9cd68a09c1d177
-      internalID: 1605768014
+      spriteID: 8b1b66dbbd790e24fa59d29642a5879a
+      internalID: -504666676
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_23
+      name: TX Struct NormalMap_40
       rect:
         serializedVersion: 2
         x: 448
@@ -567,14 +501,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 864b56013daeea7408e88fd45a40a06f
-      internalID: 439260790
+      spriteID: 5eef8ab680f46de439e945525522d5ff
+      internalID: 373203483
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_24
+      name: TX Struct NormalMap_43
       rect:
         serializedVersion: 2
         x: 32
@@ -589,14 +523,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6eb3a6fa25e25b4c80afc786352bbcc
-      internalID: 922495519
+      spriteID: c75d6bd87d8f0194d8cadbbf48faa55c
+      internalID: 1544434990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_25
+      name: TX Struct NormalMap_44
       rect:
         serializedVersion: 2
         x: 64
@@ -611,14 +545,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce7e58ab3ba6843408c1af69c9b871be
-      internalID: -202561733
+      spriteID: 0444eeb3cf49a5d4998aa565d3e775cd
+      internalID: -937679700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_26
+      name: TX Struct NormalMap_46
       rect:
         serializedVersion: 2
         x: 128
@@ -633,14 +567,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e51bc54f6a164b94aa7582e87ff570c5
-      internalID: 1381338421
+      spriteID: b4c3e5ebebaee304ea5a97a61a45cb2a
+      internalID: -346573866
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_27
+      name: TX Struct NormalMap_47
       rect:
         serializedVersion: 2
         x: 160
@@ -655,14 +589,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 541319e2654fd4e40915f035ec50f38c
-      internalID: 806551665
+      spriteID: 58dc74252ec8174439ca42dc1014974a
+      internalID: -218846139
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_29
+      name: TX Struct NormalMap_49
       rect:
         serializedVersion: 2
         x: 224
@@ -677,14 +611,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f0a5f211d00694841858920b79e456a2
-      internalID: -592310756
+      spriteID: ba59d2ea16dd2b647a14dc098c2d8c55
+      internalID: -1609271979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_30
+      name: TX Struct NormalMap_50
       rect:
         serializedVersion: 2
         x: 256
@@ -699,17 +633,83 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78638a97c2c3fbb42a9ecf2245f0fe76
-      internalID: 847356609
+      spriteID: 94c284b969138214fbdaf0afba79e607
+      internalID: 783166643
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_32
+      name: TX Struct NormalMap_11
       rect:
         serializedVersion: 2
-        x: 336
+        x: 416
+        y: 480
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edceb33ba9500846af3e7671f0bde0a
+      internalID: -1057075872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Struct NormalMap_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b1b460d343b8e4ea94338662edc7bb
+      internalID: -91114589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Struct NormalMap_21
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 448
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd76b7ea76f6bed47876a6b7b6de8d70
+      internalID: -1837450689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Struct NormalMap_69
+      rect:
+        serializedVersion: 2
+        x: 337
         y: 352
         width: 32
         height: 32
@@ -721,14 +721,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c969c057d66ad6846b2d0d0961108f71
-      internalID: -2077301271
+      spriteID: 053595dfc02b09247a7d37260c867ada
+      internalID: -1675381489
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_33
+      name: TX Struct NormalMap_70
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b95334dac3d7be846ae2df0f714187bb
+      internalID: 2017146426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Struct NormalMap_71
       rect:
         serializedVersion: 2
         x: 416
@@ -743,14 +765,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b74e2ac9ea0bdc43ba006a0be2fb81e
-      internalID: -430084999
+      spriteID: 6eeb7f9577c87664098fe262d9e3a4d5
+      internalID: -441847796
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_34
+      name: TX Struct NormalMap_72
       rect:
         serializedVersion: 2
         x: 448
@@ -765,14 +787,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64e33d7890cae334f91efcbabac84c93
-      internalID: -1588477601
+      spriteID: b08fbd56d113fe34e9b143bc3a250b4d
+      internalID: 128551239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_35
+      name: TX Struct NormalMap_75
       rect:
         serializedVersion: 2
         x: 32
@@ -787,14 +809,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d4e01affc90e67488984b5f45c87a6d
-      internalID: 19925765
+      spriteID: ad74bf9d2e2beb343a55302bd02c4470
+      internalID: -1872752646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_36
+      name: TX Struct NormalMap_76
       rect:
         serializedVersion: 2
         x: 64
@@ -809,14 +831,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 23ade8864768b4641a8453552b35246a
-      internalID: 1187688361
+      spriteID: e848cc3d2043dac4b8b4551fd493ed7e
+      internalID: 1282658990
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_37
+      name: TX Struct NormalMap_78
       rect:
         serializedVersion: 2
         x: 128
@@ -831,14 +853,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac31946f590691145a6c66ab9cc98445
-      internalID: -1644526913
+      spriteID: f465a02ce31118b46b5364584170b24a
+      internalID: 127448439
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_38
+      name: TX Struct NormalMap_79
       rect:
         serializedVersion: 2
         x: 160
@@ -853,14 +875,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b1f5f37c93bebdd45a73c56c94bf0641
-      internalID: 93688390
+      spriteID: be77ea48fd15a264ba383dd92b03e228
+      internalID: 1658246829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_40
+      name: TX Struct NormalMap_81
       rect:
         serializedVersion: 2
         x: 224
@@ -875,14 +897,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27235eb3fc46af846a562a93037f8dd5
-      internalID: -1394749301
+      spriteID: 9be46806d334f654eb1d7f2d048f22ec
+      internalID: -1980838706
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_41
+      name: TX Struct NormalMap_82
       rect:
         serializedVersion: 2
         x: 256
@@ -897,17 +919,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 79a76a4dfabc9c34487704193dff5fc4
-      internalID: -1582074461
+      spriteID: 55144219c97e81f46b8b64dc431c241d
+      internalID: -158676249
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_43
+      name: TX Struct NormalMap_85
       rect:
         serializedVersion: 2
-        x: 336
+        x: 337
         y: 320
         width: 32
         height: 32
@@ -919,14 +941,36 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d33ead17aa1b62b4b8db4ae6b1dc2202
-      internalID: 1015089911
+      spriteID: 7d5ccbbbe3af73f48a1acc950e8a6050
+      internalID: 5513541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_44
+      name: TX Struct NormalMap_86
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 320
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a218e292902ac1a41a6969b2054c93a8
+      internalID: -374122010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TX Struct NormalMap_87
       rect:
         serializedVersion: 2
         x: 416
@@ -941,14 +985,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 959c3ef5c3a1af94a8082281be5dad73
-      internalID: 1640694344
+      spriteID: c14202e688d2f074c972b365f8bb3b14
+      internalID: -1781795865
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_45
+      name: TX Struct NormalMap_88
       rect:
         serializedVersion: 2
         x: 448
@@ -963,14 +1007,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e8574a7eeaeacf245bf05b2565f52df2
-      internalID: -1264242049
+      spriteID: 62e2e0ccded35bd43bc88cbc81cfc90a
+      internalID: 753635356
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_46
+      name: TX Struct NormalMap_91
       rect:
         serializedVersion: 2
         x: 32
@@ -985,14 +1029,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0039d2f1652ad964eb3974f052579dd8
-      internalID: -912676539
+      spriteID: b8fce4625fd069a4eaac05c52293768e
+      internalID: 988369614
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_47
+      name: TX Struct NormalMap_92
       rect:
         serializedVersion: 2
         x: 64
@@ -1007,14 +1051,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a16e483e5241f8448837f15213cd0d1a
-      internalID: 1504128406
+      spriteID: 19bac7e293162224b9410cd1450a4ea7
+      internalID: 1225244183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_48
+      name: TX Struct NormalMap_94
       rect:
         serializedVersion: 2
         x: 128
@@ -1029,14 +1073,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 15e1c33b7dfed9444abacd13f055c089
-      internalID: -264353247
+      spriteID: c89348492bb2448479ac13a631bd2156
+      internalID: 690975710
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_49
+      name: TX Struct NormalMap_95
       rect:
         serializedVersion: 2
         x: 160
@@ -1051,14 +1095,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ef9bea91ee9f3f84eb7113a7bed91efc
-      internalID: 669349429
+      spriteID: 1c811389c66853c47af7b325e767dbfc
+      internalID: -1442253956
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_51
+      name: TX Struct NormalMap_97
       rect:
         serializedVersion: 2
         x: 224
@@ -1073,14 +1117,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4faed2ade40424d4c87fd3ad170f70d1
-      internalID: 454848423
+      spriteID: b728f585a2c33844fb3f81043fa647d8
+      internalID: 1518739237
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_52
+      name: TX Struct NormalMap_98
       rect:
         serializedVersion: 2
         x: 256
@@ -1095,14 +1139,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a928111d0b9d80c47aadcd9afeb8ffa7
-      internalID: -1602933290
+      spriteID: 2b0e5c32974414f4782ca13936eecdcd
+      internalID: 1392069875
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_54
+      name: TX Struct NormalMap_105
       rect:
         serializedVersion: 2
         x: 32
@@ -1117,14 +1161,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fbd59bc2da8b7e74b86de2d97919fadc
-      internalID: -173799618
+      spriteID: 47ade237a52cb33428037fab86633aaa
+      internalID: -1240268100
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_55
+      name: TX Struct NormalMap_106
       rect:
         serializedVersion: 2
         x: 64
@@ -1139,14 +1183,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4079a97221c32d0498b98570e0789e51
-      internalID: 1378005173
+      spriteID: d281a8abd5ea0d94fb82cd673deffc0b
+      internalID: 769393068
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_56
+      name: TX Struct NormalMap_108
       rect:
         serializedVersion: 2
         x: 128
@@ -1161,14 +1205,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4bbd97bdf4dff84090b34e51bb083a8
-      internalID: 719071144
+      spriteID: 798d0daaa4e87a945b3a4de8920c50bd
+      internalID: 1662127057
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_57
+      name: TX Struct NormalMap_109
       rect:
         serializedVersion: 2
         x: 160
@@ -1183,14 +1227,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7eda15fc3e54dc14d896f1b7841dae47
-      internalID: -578262215
+      spriteID: 0d2f577fe0d0cf34c88134745e6f62af
+      internalID: 147381991
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_59
+      name: TX Struct NormalMap_111
       rect:
         serializedVersion: 2
         x: 224
@@ -1205,14 +1249,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12d25796f27a44047ab589d7871fd495
-      internalID: 913455969
+      spriteID: ccdf946109383ef448c4907df5e282b0
+      internalID: -1394851161
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Struct_60
+      name: TX Struct NormalMap_112
       rect:
         serializedVersion: 2
         x: 256
@@ -1227,52 +1271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 231606126963b3349aa70b23a2ab2558
-      internalID: -939822933
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Struct_8
-      rect:
-        serializedVersion: 2
-        x: 368
-        y: 320
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c2c5049ef6a132840a5c35d651ad6312
-      internalID: 1048863844
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TX Struct_11
-      rect:
-        serializedVersion: 2
-        x: 368
-        y: 352
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c13e200a4893ee48aded3c57a7bdf56
-      internalID: 1879462962
+      spriteID: 0936a58f8605b0f4f81a64a7a0569157
+      internalID: 127357665
       vertices: []
       indices: 
       edges: []
@@ -1281,80 +1281,140 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 02a470dcd36566a46963df6c9f2660be
+    spriteID: 7beeac506310ae54f86303508a2c425e
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: 6e2d04779d3c614438bda2f3554f00ff, type: 3}
-      name: _NormalMap
+    secondaryTextures: []
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TX Struct_0: -5380237423685108026
-      TX Struct_1: 141675554456027117
-      TX Struct_10: 1138164176
-      TX Struct_11: 1879462962
-      TX Struct_12: 623581191
-      TX Struct_13: 207906442
-      TX Struct_14: 1794769752
-      TX Struct_15: -132854063
-      TX Struct_16: -701822719
-      TX Struct_17: -625893824
-      TX Struct_18: 898645681
-      TX Struct_19: 466118107
-      TX Struct_2: 5869078902113103909
-      TX Struct_20: 399351585
-      TX Struct_21: -790287664
-      TX Struct_22: 1605768014
-      TX Struct_23: 439260790
-      TX Struct_24: 922495519
-      TX Struct_25: -202561733
-      TX Struct_26: 1381338421
-      TX Struct_27: 806551665
-      TX Struct_28: 1370562561
-      TX Struct_29: -592310756
-      TX Struct_3: -7381738133999487609
-      TX Struct_30: 847356609
-      TX Struct_31: -1767424966
-      TX Struct_32: -2077301271
-      TX Struct_33: -430084999
-      TX Struct_34: -1588477601
-      TX Struct_35: 19925765
-      TX Struct_36: 1187688361
-      TX Struct_37: -1644526913
-      TX Struct_38: 93688390
-      TX Struct_39: 1379890000
-      TX Struct_4: -510105923369629673
-      TX Struct_40: -1394749301
-      TX Struct_41: -1582074461
-      TX Struct_42: 257437473
-      TX Struct_43: 1015089911
-      TX Struct_44: 1640694344
-      TX Struct_45: -1264242049
-      TX Struct_46: -912676539
-      TX Struct_47: 1504128406
-      TX Struct_48: -264353247
-      TX Struct_49: 669349429
-      TX Struct_5: -2677049488981355681
-      TX Struct_50: -317930078
-      TX Struct_51: 454848423
-      TX Struct_52: -1602933290
-      TX Struct_53: 1692523685
-      TX Struct_54: -173799618
-      TX Struct_55: 1378005173
-      TX Struct_56: 719071144
-      TX Struct_57: -578262215
-      TX Struct_58: -329595645
-      TX Struct_59: 913455969
-      TX Struct_6: -3684389700825655485
-      TX Struct_60: -939822933
-      TX Struct_61: 1770729470
-      TX Struct_7: -5664187630041763615
-      TX Struct_8: 1048863844
-      TX Struct_9: 1256520498
+      TX Struct NormalMap_0: -2086950794
+      TX Struct NormalMap_1: -1890128137
+      TX Struct NormalMap_10: 2112048593
+      TX Struct NormalMap_100: -1323862775
+      TX Struct NormalMap_101: -2037871015
+      TX Struct NormalMap_102: -1835106671
+      TX Struct NormalMap_103: -883664863
+      TX Struct NormalMap_104: 1924295993
+      TX Struct NormalMap_105: -1240268100
+      TX Struct NormalMap_106: 769393068
+      TX Struct NormalMap_107: 1423296500
+      TX Struct NormalMap_108: 1662127057
+      TX Struct NormalMap_109: 147381991
+      TX Struct NormalMap_11: -1057075872
+      TX Struct NormalMap_110: -1614778284
+      TX Struct NormalMap_111: -1394851161
+      TX Struct NormalMap_112: 127357665
+      TX Struct NormalMap_113: -436529694
+      TX Struct NormalMap_114: -705482821
+      TX Struct NormalMap_115: 254180710
+      TX Struct NormalMap_116: 1169660171
+      TX Struct NormalMap_117: 1076847223
+      TX Struct NormalMap_118: -738628682
+      TX Struct NormalMap_119: -535492871
+      TX Struct NormalMap_12: -1428415475
+      TX Struct NormalMap_120: 606608604
+      TX Struct NormalMap_121: -240565684
+      TX Struct NormalMap_122: -1637908068
+      TX Struct NormalMap_123: 707656405
+      TX Struct NormalMap_13: -1252624376
+      TX Struct NormalMap_14: 779488876
+      TX Struct NormalMap_15: 410407697
+      TX Struct NormalMap_16: 2090176668
+      TX Struct NormalMap_17: -507499794
+      TX Struct NormalMap_18: -91114589
+      TX Struct NormalMap_19: -1003261187
+      TX Struct NormalMap_2: -623562273
+      TX Struct NormalMap_20: 542789836
+      TX Struct NormalMap_21: -1837450689
+      TX Struct NormalMap_22: -1129367687
+      TX Struct NormalMap_23: -1943841648
+      TX Struct NormalMap_24: -137323778
+      TX Struct NormalMap_25: 1115707418
+      TX Struct NormalMap_26: 1368768928
+      TX Struct NormalMap_27: 1790916450
+      TX Struct NormalMap_28: 1345057376
+      TX Struct NormalMap_29: 829941427
+      TX Struct NormalMap_3: 504873738
+      TX Struct NormalMap_30: 388765338
+      TX Struct NormalMap_31: 1333068251
+      TX Struct NormalMap_32: -1307766219
+      TX Struct NormalMap_33: 445396027
+      TX Struct NormalMap_34: 107394915
+      TX Struct NormalMap_35: 1963242081
+      TX Struct NormalMap_36: -1298036203
+      TX Struct NormalMap_37: 1971264216
+      TX Struct NormalMap_38: 127914852
+      TX Struct NormalMap_39: -504666676
+      TX Struct NormalMap_4: 1335884674
+      TX Struct NormalMap_40: 373203483
+      TX Struct NormalMap_41: 1005680225
+      TX Struct NormalMap_42: -2103981757
+      TX Struct NormalMap_43: 1544434990
+      TX Struct NormalMap_44: -937679700
+      TX Struct NormalMap_45: -1248998498
+      TX Struct NormalMap_46: -346573866
+      TX Struct NormalMap_47: -218846139
+      TX Struct NormalMap_48: -583052081
+      TX Struct NormalMap_49: -1609271979
+      TX Struct NormalMap_5: -322814783
+      TX Struct NormalMap_50: 783166643
+      TX Struct NormalMap_51: 972735962
+      TX Struct NormalMap_52: -2047582629
+      TX Struct NormalMap_53: -58805920
+      TX Struct NormalMap_54: -1189145380
+      TX Struct NormalMap_55: -1944232718
+      TX Struct NormalMap_56: 371479981
+      TX Struct NormalMap_57: 1582877063
+      TX Struct NormalMap_58: 1495646420
+      TX Struct NormalMap_59: -1724902807
+      TX Struct NormalMap_6: 431993436
+      TX Struct NormalMap_60: 1704975924
+      TX Struct NormalMap_61: -1077207437
+      TX Struct NormalMap_62: -1395865556
+      TX Struct NormalMap_63: 1002658051
+      TX Struct NormalMap_64: -2016349207
+      TX Struct NormalMap_65: -584639708
+      TX Struct NormalMap_66: -209262550
+      TX Struct NormalMap_67: -1507162944
+      TX Struct NormalMap_68: -76458303
+      TX Struct NormalMap_69: -1675381489
+      TX Struct NormalMap_7: -163539522
+      TX Struct NormalMap_70: 2017146426
+      TX Struct NormalMap_71: -441847796
+      TX Struct NormalMap_72: 128551239
+      TX Struct NormalMap_73: -1029250225
+      TX Struct NormalMap_74: 599162443
+      TX Struct NormalMap_75: -1872752646
+      TX Struct NormalMap_76: 1282658990
+      TX Struct NormalMap_77: 1346005814
+      TX Struct NormalMap_78: 127448439
+      TX Struct NormalMap_79: 1658246829
+      TX Struct NormalMap_8: 1021313993
+      TX Struct NormalMap_80: 2013335305
+      TX Struct NormalMap_81: -1980838706
+      TX Struct NormalMap_82: -158676249
+      TX Struct NormalMap_83: 620702955
+      TX Struct NormalMap_84: -2017067484
+      TX Struct NormalMap_85: 5513541
+      TX Struct NormalMap_86: -374122010
+      TX Struct NormalMap_87: -1781795865
+      TX Struct NormalMap_88: 753635356
+      TX Struct NormalMap_89: -472277188
+      TX Struct NormalMap_9: 1778062383
+      TX Struct NormalMap_90: -1328235701
+      TX Struct NormalMap_91: 988369614
+      TX Struct NormalMap_92: 1225244183
+      TX Struct NormalMap_93: -1467633936
+      TX Struct NormalMap_94: 690975710
+      TX Struct NormalMap_95: -1442253956
+      TX Struct NormalMap_96: 700952118
+      TX Struct NormalMap_97: 1518739237
+      TX Struct NormalMap_98: 1392069875
+      TX Struct NormalMap_99: 1665649732
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
