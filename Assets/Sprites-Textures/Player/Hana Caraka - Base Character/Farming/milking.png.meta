@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: df904a720ede55742b6e52ca4eeb2dea
+guid: c1ec5d9efa5b56343bbe514affa436eb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1549508750607559342
-    second: TX Player_0
+      213: 3521200892635115542
+    second: milking_0
   - first:
-      213: -6957052691073287718
-    second: TX Player_1
+      213: -4339316338690927674
+    second: milking_1
   - first:
-      213: 2185052477942719528
-    second: TX Player_2
+      213: 7678807985360076820
+    second: milking_2
   - first:
-      213: -1844808789431545801
-    second: TX Player_3
+      213: -5633918275108647881
+    second: milking_3
+  - first:
+      213: 8971280465788599908
+    second: milking_4
+  - first:
+      213: 5978025889642136185
+    second: milking_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -122,13 +128,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TX Player_0
+      name: milking_0
       rect:
         serializedVersion: 2
-        x: 5
-        y: 69
-        width: 23
-        height: 46
+        x: 32
+        y: 32
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: eaaa250cff5f08510800000000000000
-      internalID: 1549508750607559342
+      spriteID: 610fd444e81ddd030800000000000000
+      internalID: 3521200892635115542
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Player_1
+      name: milking_1
       rect:
         serializedVersion: 2
-        x: 37
-        y: 69
-        width: 23
-        height: 50
+        x: 112
+        y: 32
+        width: 15
+        height: 16
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +165,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: ad9b6e00075937f90800000000000000
-      internalID: -6957052691073287718
+      spriteID: 6c35748d7c6a7c3c0800000000000000
+      internalID: -4339316338690927674
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Player_2
+      name: milking_2
       rect:
         serializedVersion: 2
-        x: 68
-        y: 69
-        width: 23
-        height: 47
+        x: 192
+        y: 32
+        width: 15
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +187,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 824ec5bd6add25e10800000000000000
-      internalID: 2185052477942719528
+      spriteID: 41002d9bd2b909a60800000000000000
+      internalID: 7678807985360076820
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Player_3
+      name: milking_3
       rect:
         serializedVersion: 2
-        x: 98
-        y: 67
-        width: 29
-        height: 30
+        x: 272
+        y: 32
+        width: 15
+        height: 14
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +209,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7301a632e2ce566e0800000000000000
-      internalID: -1844808789431545801
+      spriteID: 73c4196bd2d40d1b0800000000000000
+      internalID: -5633918275108647881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: milking_4
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 32
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46efabf3d04608c70800000000000000
+      internalID: 8971280465788599908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: milking_5
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 32
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 972453aafd636f250800000000000000
+      internalID: 5978025889642136185
       vertices: []
       indices: 
       edges: []
@@ -222,11 +272,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      TX Player_0: 1549508750607559342
-      TX Player_1: -6957052691073287718
-      TX Player_2: 2185052477942719528
-      TX Player_3: -1844808789431545801
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
