@@ -1,43 +1,43 @@
 fileFormatVersion: 2
-guid: 9607f2b32bf287d4fa8ea6f51e3a7b8d
+guid: de1ef46cbba25ad44afa258238652d6c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1733087341866461178
-    second: TX Tileset Wall_0
+      213: -8032827135640025811
+    second: TX Tileset WallNormalMap_0
   - first:
-      213: 6957734447361721616
-    second: TX Tileset Wall_1
+      213: 3659338510102832293
+    second: TX Tileset WallNormalMap_1
   - first:
-      213: 6591716156378716260
-    second: TX Tileset Wall_2
+      213: -4632343918461132738
+    second: TX Tileset WallNormalMap_2
   - first:
-      213: 2165944517536112100
-    second: TX Tileset Wall_3
+      213: -2921940535638646598
+    second: TX Tileset WallNormalMap_3
   - first:
-      213: 6429608448122266744
-    second: TX Tileset Wall_4
+      213: 179203422669712597
+    second: TX Tileset WallNormalMap_4
   - first:
-      213: -8038740358467470550
-    second: TX Tileset Wall_5
+      213: 5485577543755374266
+    second: TX Tileset WallNormalMap_5
   - first:
-      213: -5334644376926737371
-    second: TX Tileset Wall_6
+      213: 1715941025701686321
+    second: TX Tileset WallNormalMap_6
   - first:
-      213: -5954229690154693420
-    second: TX Tileset Wall_7
+      213: 5776311592412962158
+    second: TX Tileset WallNormalMap_7
   - first:
-      213: -522149132528552129
-    second: TX Tileset Wall_8
+      213: -4599044458560529234
+    second: TX Tileset WallNormalMap_8
   - first:
-      213: 6981085378657702106
-    second: TX Tileset Wall_9
+      213: 8973542506969781677
+    second: TX Tileset WallNormalMap_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
-    sRGBTexture: 1
+    sRGBTexture: 0
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -48,13 +48,13 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: 0.25
+    heightScale: 0.028
     normalMapFilter: 0
     flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
-  vTOnly: 0
+  vTOnly: 1
   ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
@@ -65,7 +65,7 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: 1
+    aniso: 3
     mipBias: 0
     wrapU: 1
     wrapV: 1
@@ -78,13 +78,13 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
-  textureType: 8
+  textureType: 1
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -92,16 +92,16 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  ignorePngGamma: 0
+  ignorePngGamma: 1
   applyGammaDecoding: 0
   swizzle: 50462976
   cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 512
+    maxTextureSize: 128
     resizeAlgorithm: 0
-    textureFormat: 4
+    textureFormat: -1
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -140,7 +140,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TX Tileset Wall_0
+      name: TX Tileset WallNormalMap_0
       rect:
         serializedVersion: 2
         x: 32
@@ -153,16 +153,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 608d25fae36d2f7e0800000000000000
-      internalID: -1733087341866461178
+      spriteID: 757fb7b8cefbf1345be9c594d7809d75
+      internalID: 1514903787
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_1
+      name: TX Tileset WallNormalMap_1
       rect:
         serializedVersion: 2
         x: 64
@@ -175,16 +175,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0158e70cd96de8060800000000000000
-      internalID: 6957734447361721616
+      spriteID: 5a2b63d49e0005f4d9763d77bd1084bf
+      internalID: -1543133142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_2
+      name: TX Tileset WallNormalMap_2
       rect:
         serializedVersion: 2
         x: 96
@@ -197,16 +197,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 46818297bea7a7b50800000000000000
-      internalID: 6591716156378716260
+      spriteID: b0fba3575be081b439ef85f02de5b4c9
+      internalID: 2067174975
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_3
+      name: TX Tileset WallNormalMap_3
       rect:
         serializedVersion: 2
         x: 128
@@ -219,16 +219,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4edd1f2201bfe0e10800000000000000
-      internalID: 2165944517536112100
+      spriteID: f52c2279b8f29654796e023aa46b2f04
+      internalID: 1801458793
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_4
+      name: TX Tileset WallNormalMap_4
       rect:
         serializedVersion: 2
         x: 160
@@ -241,16 +241,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 874ad2b61de8a3950800000000000000
-      internalID: 6429608448122266744
+      spriteID: aa9f181e4ff5f054981208216e5ea115
+      internalID: 235946893
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_5
+      name: TX Tileset WallNormalMap_5
       rect:
         serializedVersion: 2
         x: 192
@@ -263,16 +263,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: a2b33fb2c38a07090800000000000000
-      internalID: -8038740358467470550
+      spriteID: 134cf1d6598558e4599b3df7daaab4c9
+      internalID: -1753817836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_6
+      name: TX Tileset WallNormalMap_6
       rect:
         serializedVersion: 2
         x: 224
@@ -285,16 +285,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 52c2f3e043987f5b0800000000000000
-      internalID: -5334644376926737371
+      spriteID: 4ab8f2448b8a2474b9fde711d6d10e13
+      internalID: -1515724330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_7
+      name: TX Tileset WallNormalMap_7
       rect:
         serializedVersion: 2
         x: 256
@@ -307,16 +307,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 4dcce37c4a35e5da0800000000000000
-      internalID: -5954229690154693420
+      spriteID: 4c681c5397b005847a3c0395cfaa5ef1
+      internalID: 1103027786
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_8
+      name: TX Tileset WallNormalMap_8
       rect:
         serializedVersion: 2
         x: 288
@@ -329,16 +329,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: f377bd36124f0c8f0800000000000000
-      internalID: -522149132528552129
+      spriteID: a42571944b7d2bf48b340fab4e2ed740
+      internalID: 1129846890
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_9
+      name: TX Tileset WallNormalMap_9
       rect:
         serializedVersion: 2
         x: 320
@@ -351,16 +351,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ad0d09d1a2cc1e060800000000000000
-      internalID: 6981085378657702106
+      spriteID: 4fca650a66de5324b95a89cab7e9249e
+      internalID: -42779274
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_10
+      name: TX Tileset WallNormalMap_10
       rect:
         serializedVersion: 2
         x: 384
@@ -375,14 +375,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebccbf9532d47454f9c90ba0df3577eb
-      internalID: 408916667
+      spriteID: 14a058c83c6117241ad911d42f9e82dd
+      internalID: 303559257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_11
+      name: TX Tileset WallNormalMap_11
       rect:
         serializedVersion: 2
         x: 416
@@ -397,14 +397,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bd66929df8af9a43bc93ce0944c3d4a
-      internalID: 1862283104
+      spriteID: 42614d4a1369d6b42ae2e2e2a9da4599
+      internalID: 1894183613
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_12
+      name: TX Tileset WallNormalMap_12
       rect:
         serializedVersion: 2
         x: 448
@@ -419,14 +419,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6e5ca349b977ae49acff9cb3b6b6097
-      internalID: -836633332
+      spriteID: 55a08b2270ec98043811a2426ad2f09b
+      internalID: -189287777
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_13
+      name: TX Tileset WallNormalMap_13
       rect:
         serializedVersion: 2
         x: 32
@@ -441,14 +441,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34fe5b347daa9ca4898fa2043c6f2e00
-      internalID: 2112890635
+      spriteID: 35b13a0f435e3c841a0019d10ca5ead5
+      internalID: 285159950
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_14
+      name: TX Tileset WallNormalMap_14
       rect:
         serializedVersion: 2
         x: 96
@@ -463,14 +463,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8985f6a5dab923a46a2360f1c6bd8414
-      internalID: 152996903
+      spriteID: e3356df8c48965542b723155916ef6eb
+      internalID: -716479351
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_15
+      name: TX Tileset WallNormalMap_15
       rect:
         serializedVersion: 2
         x: 128
@@ -485,14 +485,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3bc2480674db8a74b9b652cb0bd1c3ca
-      internalID: -970653761
+      spriteID: 4a3691b3df5562e4b81fc29fa32f3165
+      internalID: 1602699836
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_16
+      name: TX Tileset WallNormalMap_16
       rect:
         serializedVersion: 2
         x: 160
@@ -507,14 +507,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1ec918947be608842bf83e4fe4754458
-      internalID: 1018296558
+      spriteID: 753c963391f818941ae5e4e9be3a4c08
+      internalID: 1156050052
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_17
+      name: TX Tileset WallNormalMap_17
       rect:
         serializedVersion: 2
         x: 192
@@ -529,14 +529,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b939f2de66222ee4680c22e46014422c
-      internalID: -1690541055
+      spriteID: d0ab35e9a9845424d82839f103e6d9e8
+      internalID: -1712426142
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_18
+      name: TX Tileset WallNormalMap_18
       rect:
         serializedVersion: 2
         x: 224
@@ -551,14 +551,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbdfe130b4414fd45b8b2ff6ef2aea09
-      internalID: 1648974189
+      spriteID: bffd063cc7ef0d04d94e82deef89c1b5
+      internalID: 752362188
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_19
+      name: TX Tileset WallNormalMap_19
       rect:
         serializedVersion: 2
         x: 256
@@ -573,14 +573,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad99e5908c7e6774ab5295b70bd26cac
-      internalID: 705385016
+      spriteID: 017d172d48088004fb27a7a38a967d92
+      internalID: -1183265385
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_20
+      name: TX Tileset WallNormalMap_20
       rect:
         serializedVersion: 2
         x: 288
@@ -595,14 +595,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 543947d29d7b03b42b335e7f1a8a3bba
-      internalID: -1712683421
+      spriteID: d1c7d592abbb38144854c8f6f0562c3a
+      internalID: 605441416
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_21
+      name: TX Tileset WallNormalMap_21
       rect:
         serializedVersion: 2
         x: 320
@@ -617,14 +617,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34cd957bf1b31664dbc387b2d922de40
-      internalID: 1732575228
+      spriteID: 307bfa915a87c324f8838287d4d9da1c
+      internalID: -1306855332
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_22
+      name: TX Tileset WallNormalMap_22
       rect:
         serializedVersion: 2
         x: 384
@@ -639,14 +639,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60f74b7d20cdea94cb89ad4d4143090b
-      internalID: 2092763636
+      spriteID: 1046bec3b218162468e5ddd13c10298f
+      internalID: 489621259
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_23
+      name: TX Tileset WallNormalMap_23
       rect:
         serializedVersion: 2
         x: 416
@@ -661,14 +661,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0eea0ec591c8d82438ff99e02a82da6e
-      internalID: 171819340
+      spriteID: f280325942364cc489aa03f02ba711a3
+      internalID: 1610820373
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_24
+      name: TX Tileset WallNormalMap_24
       rect:
         serializedVersion: 2
         x: 32
@@ -683,14 +683,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14205b47feeee244ca44a158a9d65651
-      internalID: -247623804
+      spriteID: 727e2f09bcb627a40a5bf2c857847ba4
+      internalID: -981829275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_25
+      name: TX Tileset WallNormalMap_25
       rect:
         serializedVersion: 2
         x: 64
@@ -705,14 +705,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6206d82dc9793484781f3d09bb6d9ef9
-      internalID: -2141836846
+      spriteID: 29c956dfe6af43e4681765615e0617bd
+      internalID: 1279054831
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_26
+      name: TX Tileset WallNormalMap_26
       rect:
         serializedVersion: 2
         x: 96
@@ -727,14 +727,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2eb848e0ddf6414db52114d8c4c828f
-      internalID: 534919429
+      spriteID: e69a7d7ebd49ca34a920a9b2a39954fd
+      internalID: -366815763
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_27
+      name: TX Tileset WallNormalMap_27
       rect:
         serializedVersion: 2
         x: 128
@@ -749,14 +749,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 334315a330deaf54caa2f1a63af4d80c
-      internalID: -698251221
+      spriteID: c220b8f1a73a09245ab7911783e3258d
+      internalID: -1535650153
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_28
+      name: TX Tileset WallNormalMap_28
       rect:
         serializedVersion: 2
         x: 256
@@ -771,14 +771,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d38c4ac44814cd4f99b9ed82cb55986
-      internalID: -350901644
+      spriteID: 68a2e8c9400658f43abeca258c51bb01
+      internalID: -978149339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_29
+      name: TX Tileset WallNormalMap_29
       rect:
         serializedVersion: 2
         x: 288
@@ -793,14 +793,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fee5a1b45732732439f26bfd7bd4dac6
-      internalID: -1037928994
+      spriteID: c34ac24fc97bacd488e1c4c73209d83b
+      internalID: 683931099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_30
+      name: TX Tileset WallNormalMap_30
       rect:
         serializedVersion: 2
         x: 320
@@ -815,14 +815,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c4b125c238d59ee498fad57ff9f0d596
-      internalID: -1020083571
+      spriteID: 223ef43dd82afd24c885a55398e7a96c
+      internalID: -1821413358
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_31
+      name: TX Tileset WallNormalMap_31
       rect:
         serializedVersion: 2
         x: 384
@@ -837,14 +837,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7caef6f849362c848ac74238d1003f80
-      internalID: -1700867982
+      spriteID: cc8147ab9d336954183902ff449d9225
+      internalID: -640056700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_32
+      name: TX Tileset WallNormalMap_32
       rect:
         serializedVersion: 2
         x: 416
@@ -859,14 +859,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ee18a21dfe8e864ba0d2b8a94aa1bfa
-      internalID: -423480027
+      spriteID: 8121b753856aae24da25a0a45043daa7
+      internalID: 1104642668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_33
+      name: TX Tileset WallNormalMap_33
       rect:
         serializedVersion: 2
         x: 32
@@ -881,14 +881,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c038f97e7a1b5d648ad5f9600ccfda36
-      internalID: -1725616213
+      spriteID: 50dcc019565dc00478700b99253e3472
+      internalID: 72047717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_34
+      name: TX Tileset WallNormalMap_34
       rect:
         serializedVersion: 2
         x: 64
@@ -903,14 +903,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ba9c7a68e4e8e04dbe2cca162a52884
-      internalID: -636539313
+      spriteID: cd770856600de3641a5b3414362a1123
+      internalID: 203775300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_35
+      name: TX Tileset WallNormalMap_35
       rect:
         serializedVersion: 2
         x: 96
@@ -925,14 +925,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7bce6e0c28ad5149be5fe09d1bba395
-      internalID: 463801250
+      spriteID: be0d8d0f401edb946b5829b2dcf72990
+      internalID: 208475848
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_36
+      name: TX Tileset WallNormalMap_36
       rect:
         serializedVersion: 2
         x: 128
@@ -947,14 +947,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0207c652fc14465489b40927cb82dc99
-      internalID: -45984701
+      spriteID: 3c40a8392bd83f64892e96c34028f0bd
+      internalID: -1493436239
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_37
+      name: TX Tileset WallNormalMap_37
       rect:
         serializedVersion: 2
         x: 160
@@ -969,14 +969,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed1668ae570616646aa38fefee516818
-      internalID: -857046637
+      spriteID: ce773c859447552498b1048631b325a9
+      internalID: -569769269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_38
+      name: TX Tileset WallNormalMap_38
       rect:
         serializedVersion: 2
         x: 192
@@ -991,14 +991,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bfac01bec36135f48b89acbc196bf583
-      internalID: -837180542
+      spriteID: 5aae20f422ec31a43b3e15f0ff9f9227
+      internalID: 343173947
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_39
+      name: TX Tileset WallNormalMap_39
       rect:
         serializedVersion: 2
         x: 224
@@ -1013,14 +1013,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f17650c605fb078429cfe7930053d7e9
-      internalID: -1094806159
+      spriteID: 67c47c6b8302f924e8dff0d86924927b
+      internalID: -491273194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_40
+      name: TX Tileset WallNormalMap_40
       rect:
         serializedVersion: 2
         x: 256
@@ -1035,14 +1035,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8111072ec1223bf4ba84339cbdc5dfe0
-      internalID: -100955352
+      spriteID: 046098556fc7e0147bcc1c11337faee9
+      internalID: 1635590214
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_41
+      name: TX Tileset WallNormalMap_41
       rect:
         serializedVersion: 2
         x: 384
@@ -1057,14 +1057,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7487ccafafa0eeb47bbeb57e0e5df988
-      internalID: 1122391922
+      spriteID: 1bd9f06826c65a14c974e87f521b974b
+      internalID: -1821202202
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_42
+      name: TX Tileset WallNormalMap_42
       rect:
         serializedVersion: 2
         x: 416
@@ -1079,14 +1079,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6351243b2060884dbb427512e6f75a4
-      internalID: 2095830999
+      spriteID: 7759decf266dbbc48a373c11e116c4f3
+      internalID: -550262201
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_43
+      name: TX Tileset WallNormalMap_43
       rect:
         serializedVersion: 2
         x: 32
@@ -1101,14 +1101,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4a04604cfb47ac4ea5c447dc221b754
-      internalID: -1975180604
+      spriteID: d3865839dbd5bdd479d258d003334a6f
+      internalID: 2115286487
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_44
+      name: TX Tileset WallNormalMap_44
       rect:
         serializedVersion: 2
         x: 64
@@ -1123,14 +1123,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34a043db705530f48acc53bf4341aebf
-      internalID: -1986334436
+      spriteID: ecf3e915b5d15524f90611a539fe219f
+      internalID: 842498765
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_45
+      name: TX Tileset WallNormalMap_45
       rect:
         serializedVersion: 2
         x: 96
@@ -1145,14 +1145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e73b1f3a7a8c3024ab73906ccf9fd046
-      internalID: -1977401097
+      spriteID: ab095825921341440a4b672c3efeb5c7
+      internalID: 227135952
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_46
+      name: TX Tileset WallNormalMap_46
       rect:
         serializedVersion: 2
         x: 128
@@ -1167,14 +1167,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84f9832a89984c04589bb49d35dbbb34
-      internalID: 1415898786
+      spriteID: 402baae07c0ebe44eb8e0bb57952e0cf
+      internalID: -1696086206
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_47
+      name: TX Tileset WallNormalMap_47
       rect:
         serializedVersion: 2
         x: 192
@@ -1189,14 +1189,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be40189c4a2c3644e9d59c34d9661391
-      internalID: -1340263424
+      spriteID: e278cc475ad6ec64a83102011c790121
+      internalID: 761679864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_48
+      name: TX Tileset WallNormalMap_48
       rect:
         serializedVersion: 2
         x: 32
@@ -1211,14 +1211,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2068965743ca4c549b578b32444286df
-      internalID: 2025809895
+      spriteID: 000bbed799a6e044eb83bd92812490f0
+      internalID: -1982553561
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_49
+      name: TX Tileset WallNormalMap_49
       rect:
         serializedVersion: 2
         x: 64
@@ -1233,14 +1233,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 06d4c13667250cd44b05702deb0e473d
-      internalID: 1196343452
+      spriteID: 1b4d34f003e35c9409a114000978de48
+      internalID: -1348508491
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_50
+      name: TX Tileset WallNormalMap_50
       rect:
         serializedVersion: 2
         x: 96
@@ -1255,14 +1255,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49401a9b55d1795419429c20350c6c5c
-      internalID: 959202639
+      spriteID: 05edea80318bc27468e6b1709c847912
+      internalID: 24372196
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_51
+      name: TX Tileset WallNormalMap_51
       rect:
         serializedVersion: 2
         x: 128
@@ -1277,14 +1277,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a2af2f34cf069e4db16cdade12e1135
-      internalID: 1664880946
+      spriteID: 8d5bd31f25bd5d74f8b51790155b3120
+      internalID: -1754042216
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_52
+      name: TX Tileset WallNormalMap_52
       rect:
         serializedVersion: 2
         x: 192
@@ -1299,14 +1299,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7e5d83cb76a58484984ec13b1aa2e499
-      internalID: 1613642432
+      spriteID: e7613f515befa6a45bdd243671609c59
+      internalID: -1191370099
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_53
+      name: TX Tileset WallNormalMap_53
       rect:
         serializedVersion: 2
         x: 32
@@ -1321,14 +1321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 599018fcc73947a4e8d4d4f8b69fe8cc
-      internalID: -918501584
+      spriteID: 3dd3c90e184c2954d9bc3c48d37b0ba9
+      internalID: 739306234
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_54
+      name: TX Tileset WallNormalMap_54
       rect:
         serializedVersion: 2
         x: 64
@@ -1343,14 +1343,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6d89f7b5edeae3f42aa63ca7715f0c90
-      internalID: 584365869
+      spriteID: 26274e054165d264db68158776786a0c
+      internalID: 452688968
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_55
+      name: TX Tileset WallNormalMap_55
       rect:
         serializedVersion: 2
         x: 128
@@ -1365,14 +1365,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 920ffc45391f54e47ba9cb1e592ef7e5
-      internalID: 70283696
+      spriteID: 62b0262326bf15945a835d7848f6c2e5
+      internalID: 562549345
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_56
+      name: TX Tileset WallNormalMap_56
       rect:
         serializedVersion: 2
         x: 160
@@ -1387,14 +1387,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f0c18e61bccd414b81f8cbba27e962b
-      internalID: -1638850967
+      spriteID: ba0e6420e1c2df14d93b07c28fd1518a
+      internalID: -1917904360
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_57
+      name: TX Tileset WallNormalMap_57
       rect:
         serializedVersion: 2
         x: 32
@@ -1409,14 +1409,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b62e2e0095b71844c9793ccae494cd86
-      internalID: 710322548
+      spriteID: eec19f962824c8e4fa43691decdee7b4
+      internalID: 1864037217
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_58
+      name: TX Tileset WallNormalMap_58
       rect:
         serializedVersion: 2
         x: 64
@@ -1431,14 +1431,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d09dcc6514a635246809abe9e0cb741e
-      internalID: -1467958408
+      spriteID: 56bde8b80d8797c42a9e9e2192dfc162
+      internalID: 2109674682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_59
+      name: TX Tileset WallNormalMap_59
       rect:
         serializedVersion: 2
         x: 128
@@ -1453,14 +1453,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4527205f6ca13ee4292fe62eccff72c5
-      internalID: -628251996
+      spriteID: cfb77d412422b2e42bbd1e7369a7fb01
+      internalID: -1795370462
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: TX Tileset Wall_60
+      name: TX Tileset WallNormalMap_60
       rect:
         serializedVersion: 2
         x: 160
@@ -1475,8 +1475,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e23bd52f457758346b89ffa97066ee3c
-      internalID: -720900933
+      spriteID: 7db282e58fe0dd3428201be5648b88be
+      internalID: -909369289
       vertices: []
       indices: 
       edges: []
@@ -1485,79 +1485,77 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: abf9165cf21ca104a96a696df298ea26
+    spriteID: 962807d22df850b4d89d7aa4dc037f14
     internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
-    secondaryTextures:
-    - texture: {fileID: 2800000, guid: de1ef46cbba25ad44afa258238652d6c, type: 3}
-      name: _NormalMap
+    secondaryTextures: []
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      TX Tileset Wall_0: -1733087341866461178
-      TX Tileset Wall_1: 6957734447361721616
-      TX Tileset Wall_10: 408916667
-      TX Tileset Wall_11: 1862283104
-      TX Tileset Wall_12: -836633332
-      TX Tileset Wall_13: 2112890635
-      TX Tileset Wall_14: 152996903
-      TX Tileset Wall_15: -970653761
-      TX Tileset Wall_16: 1018296558
-      TX Tileset Wall_17: -1690541055
-      TX Tileset Wall_18: 1648974189
-      TX Tileset Wall_19: 705385016
-      TX Tileset Wall_2: 6591716156378716260
-      TX Tileset Wall_20: -1712683421
-      TX Tileset Wall_21: 1732575228
-      TX Tileset Wall_22: 2092763636
-      TX Tileset Wall_23: 171819340
-      TX Tileset Wall_24: -247623804
-      TX Tileset Wall_25: -2141836846
-      TX Tileset Wall_26: 534919429
-      TX Tileset Wall_27: -698251221
-      TX Tileset Wall_28: -350901644
-      TX Tileset Wall_29: -1037928994
-      TX Tileset Wall_3: 2165944517536112100
-      TX Tileset Wall_30: -1020083571
-      TX Tileset Wall_31: -1700867982
-      TX Tileset Wall_32: -423480027
-      TX Tileset Wall_33: -1725616213
-      TX Tileset Wall_34: -636539313
-      TX Tileset Wall_35: 463801250
-      TX Tileset Wall_36: -45984701
-      TX Tileset Wall_37: -857046637
-      TX Tileset Wall_38: -837180542
-      TX Tileset Wall_39: -1094806159
-      TX Tileset Wall_4: 6429608448122266744
-      TX Tileset Wall_40: -100955352
-      TX Tileset Wall_41: 1122391922
-      TX Tileset Wall_42: 2095830999
-      TX Tileset Wall_43: -1975180604
-      TX Tileset Wall_44: -1986334436
-      TX Tileset Wall_45: -1977401097
-      TX Tileset Wall_46: 1415898786
-      TX Tileset Wall_47: -1340263424
-      TX Tileset Wall_48: 2025809895
-      TX Tileset Wall_49: 1196343452
-      TX Tileset Wall_5: -8038740358467470550
-      TX Tileset Wall_50: 959202639
-      TX Tileset Wall_51: 1664880946
-      TX Tileset Wall_52: 1613642432
-      TX Tileset Wall_53: -918501584
-      TX Tileset Wall_54: 584365869
-      TX Tileset Wall_55: 70283696
-      TX Tileset Wall_56: -1638850967
-      TX Tileset Wall_57: 710322548
-      TX Tileset Wall_58: -1467958408
-      TX Tileset Wall_59: -628251996
-      TX Tileset Wall_6: -5334644376926737371
-      TX Tileset Wall_60: -720900933
-      TX Tileset Wall_7: -5954229690154693420
-      TX Tileset Wall_8: -522149132528552129
-      TX Tileset Wall_9: 6981085378657702106
+      TX Tileset WallNormalMap_0: 1514903787
+      TX Tileset WallNormalMap_1: -1543133142
+      TX Tileset WallNormalMap_10: 303559257
+      TX Tileset WallNormalMap_11: 1894183613
+      TX Tileset WallNormalMap_12: -189287777
+      TX Tileset WallNormalMap_13: 285159950
+      TX Tileset WallNormalMap_14: -716479351
+      TX Tileset WallNormalMap_15: 1602699836
+      TX Tileset WallNormalMap_16: 1156050052
+      TX Tileset WallNormalMap_17: -1712426142
+      TX Tileset WallNormalMap_18: 752362188
+      TX Tileset WallNormalMap_19: -1183265385
+      TX Tileset WallNormalMap_2: 2067174975
+      TX Tileset WallNormalMap_20: 605441416
+      TX Tileset WallNormalMap_21: -1306855332
+      TX Tileset WallNormalMap_22: 489621259
+      TX Tileset WallNormalMap_23: 1610820373
+      TX Tileset WallNormalMap_24: -981829275
+      TX Tileset WallNormalMap_25: 1279054831
+      TX Tileset WallNormalMap_26: -366815763
+      TX Tileset WallNormalMap_27: -1535650153
+      TX Tileset WallNormalMap_28: -978149339
+      TX Tileset WallNormalMap_29: 683931099
+      TX Tileset WallNormalMap_3: 1801458793
+      TX Tileset WallNormalMap_30: -1821413358
+      TX Tileset WallNormalMap_31: -640056700
+      TX Tileset WallNormalMap_32: 1104642668
+      TX Tileset WallNormalMap_33: 72047717
+      TX Tileset WallNormalMap_34: 203775300
+      TX Tileset WallNormalMap_35: 208475848
+      TX Tileset WallNormalMap_36: -1493436239
+      TX Tileset WallNormalMap_37: -569769269
+      TX Tileset WallNormalMap_38: 343173947
+      TX Tileset WallNormalMap_39: -491273194
+      TX Tileset WallNormalMap_4: 235946893
+      TX Tileset WallNormalMap_40: 1635590214
+      TX Tileset WallNormalMap_41: -1821202202
+      TX Tileset WallNormalMap_42: -550262201
+      TX Tileset WallNormalMap_43: 2115286487
+      TX Tileset WallNormalMap_44: 842498765
+      TX Tileset WallNormalMap_45: 227135952
+      TX Tileset WallNormalMap_46: -1696086206
+      TX Tileset WallNormalMap_47: 761679864
+      TX Tileset WallNormalMap_48: -1982553561
+      TX Tileset WallNormalMap_49: -1348508491
+      TX Tileset WallNormalMap_5: -1753817836
+      TX Tileset WallNormalMap_50: 24372196
+      TX Tileset WallNormalMap_51: -1754042216
+      TX Tileset WallNormalMap_52: -1191370099
+      TX Tileset WallNormalMap_53: 739306234
+      TX Tileset WallNormalMap_54: 452688968
+      TX Tileset WallNormalMap_55: 562549345
+      TX Tileset WallNormalMap_56: -1917904360
+      TX Tileset WallNormalMap_57: 1864037217
+      TX Tileset WallNormalMap_58: 2109674682
+      TX Tileset WallNormalMap_59: -1795370462
+      TX Tileset WallNormalMap_6: -1515724330
+      TX Tileset WallNormalMap_60: -909369289
+      TX Tileset WallNormalMap_7: 1103027786
+      TX Tileset WallNormalMap_8: 1129846890
+      TX Tileset WallNormalMap_9: -42779274
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
