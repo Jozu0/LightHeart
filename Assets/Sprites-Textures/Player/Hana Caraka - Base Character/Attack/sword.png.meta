@@ -88,7 +88,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -102,7 +102,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 15
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -123,10 +123,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -167,12 +167,12 @@ TextureImporter:
       name: sword_0
       rect:
         serializedVersion: 2
-        x: 24
-        y: 192
-        width: 21
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 25
+        y: 193
+        width: 19
+        height: 15
+      alignment: 9
+      pivot: {x: 0.71, y: 0.13}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -189,12 +189,12 @@ TextureImporter:
       name: sword_1
       rect:
         serializedVersion: 2
-        x: 104
-        y: 192
-        width: 21
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 105
+        y: 193
+        width: 19
+        height: 14
+      alignment: 9
+      pivot: {x: 0.71, y: 0.1455}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -211,12 +211,12 @@ TextureImporter:
       name: sword_2
       rect:
         serializedVersion: 2
-        x: 187
-        y: 191
-        width: 30
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 188
+        y: 192
+        width: 28
+        height: 14
+      alignment: 9
+      pivot: {x: 0.4474, y: 0.144}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -233,12 +233,12 @@ TextureImporter:
       name: sword_3
       rect:
         serializedVersion: 2
-        x: 274
-        y: 191
-        width: 25
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 275
+        y: 192
+        width: 23
+        height: 14
+      alignment: 9
+      pivot: {x: 0.24, y: 0.143}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: sword_4
       rect:
         serializedVersion: 2
-        x: 353
-        y: 192
-        width: 24
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 354
+        y: 193
+        width: 22
+        height: 14
+      alignment: 9
+      pivot: {x: 0.249, y: 0.144}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -277,12 +277,12 @@ TextureImporter:
       name: sword_5
       rect:
         serializedVersion: 2
-        x: 433
-        y: 192
-        width: 18
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 434
+        y: 193
+        width: 16
+        height: 14
+      alignment: 9
+      pivot: {x: 0.345, y: 0.144}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: sword_6
       rect:
         serializedVersion: 2
-        x: 25
-        y: 112
-        width: 22
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 26
+        y: 113
+        width: 20
+        height: 18
+      alignment: 9
+      pivot: {x: 0.675, y: 0.111}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -321,12 +321,12 @@ TextureImporter:
       name: sword_7
       rect:
         serializedVersion: 2
-        x: 100
-        y: 112
-        width: 27
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 101
+        y: 113
+        width: 25
+        height: 15
+      alignment: 9
+      pivot: {x: 0.74, y: 0.132}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -343,12 +343,12 @@ TextureImporter:
       name: sword_8
       rect:
         serializedVersion: 2
-        x: 180
-        y: 99
-        width: 27
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 181
+        y: 100
+        width: 25
+        height: 26
+      alignment: 9
+      pivot: {x: 0.741, y: 0.539}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -365,12 +365,12 @@ TextureImporter:
       name: sword_9
       rect:
         serializedVersion: 2
-        x: 262
-        y: 99
-        width: 27
-        height: 28
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 263
+        y: 100
+        width: 25
+        height: 26
+      alignment: 9
+      pivot: {x: 0.66, y: 0.538}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -387,12 +387,12 @@ TextureImporter:
       name: sword_10
       rect:
         serializedVersion: 2
-        x: 352
-        y: 110
-        width: 22
-        height: 18
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 353
+        y: 111
+        width: 20
+        height: 16
+      alignment: 9
+      pivot: {x: 0.324, y: 0.249}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -409,12 +409,12 @@ TextureImporter:
       name: sword_11
       rect:
         serializedVersion: 2
-        x: 429
-        y: 111
-        width: 18
-        height: 17
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 430
+        y: 112
+        width: 16
+        height: 15
+      alignment: 9
+      pivot: {x: 0.598, y: 0.2009}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -431,12 +431,12 @@ TextureImporter:
       name: sword_12
       rect:
         serializedVersion: 2
-        x: 32
-        y: 31
-        width: 21
-        height: 19
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 33
+        y: 32
+        width: 19
+        height: 17
+      alignment: 9
+      pivot: {x: 0.343, y: 0.117}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -453,12 +453,12 @@ TextureImporter:
       name: sword_13
       rect:
         serializedVersion: 2
-        x: 112
-        y: 31
-        width: 26
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 113
+        y: 32
+        width: 24
+        height: 14
+      alignment: 9
+      pivot: {x: 0.271, y: 0.143}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -475,12 +475,12 @@ TextureImporter:
       name: sword_14
       rect:
         serializedVersion: 2
-        x: 192
-        y: 31
-        width: 27
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 193
+        y: 32
+        width: 25
+        height: 21
+      alignment: 9
+      pivot: {x: 0.2602, y: 0.095}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -497,12 +497,12 @@ TextureImporter:
       name: sword_15
       rect:
         serializedVersion: 2
-        x: 269
-        y: 31
-        width: 27
-        height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 270
+        y: 32
+        width: 25
+        height: 21
+      alignment: 9
+      pivot: {x: 0.3805, y: 0.095}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -519,12 +519,12 @@ TextureImporter:
       name: sword_16
       rect:
         serializedVersion: 2
-        x: 344
-        y: 31
-        width: 23
-        height: 15
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 345
+        y: 32
+        width: 21
+        height: 13
+      alignment: 9
+      pivot: {x: 0.6902, y: 0.153}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -541,12 +541,12 @@ TextureImporter:
       name: sword_17
       rect:
         serializedVersion: 2
-        x: 432
-        y: 31
-        width: 17
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 433
+        y: 32
+        width: 15
+        height: 14
+      alignment: 9
+      pivot: {x: 0.434, y: 0.142}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -563,7 +563,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1e5d7d9baab320d4cab18b2f9631953a
     internalID: 0
     vertices: []
     indices: 
