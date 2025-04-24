@@ -597,7 +597,26 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      sickle_0: -7243430734322799159
+      sickle_1: 3658500314282934719
+      sickle_10: 5208068013027691788
+      sickle_11: 915856299126360314
+      sickle_12: -3747466679578931388
+      sickle_13: 3200578761007247903
+      sickle_14: 9057719079956191953
+      sickle_15: -5259051995218643722
+      sickle_16: -8593966688918499466
+      sickle_17: 5248162661774545124
+      sickle_18: -3293348461204803044
+      sickle_2: 3345759707025931936
+      sickle_3: 5989065473491100762
+      sickle_4: 8266002720771906515
+      sickle_5: 8176051998056844586
+      sickle_6: 2033422910917616053
+      sickle_7: 3977325345682370057
+      sickle_8: 385765980724638636
+      sickle_9: -5406903411033560839
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

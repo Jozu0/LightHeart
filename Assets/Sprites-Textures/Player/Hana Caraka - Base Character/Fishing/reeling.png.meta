@@ -572,7 +572,25 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      reeling_0: -5056764180902915368
+      reeling_1: -2976240999381863641
+      reeling_10: -5118409252622665965
+      reeling_11: -7580797440762339363
+      reeling_12: -7777369269720278002
+      reeling_13: -13896457446699134
+      reeling_14: 1790236624363181157
+      reeling_15: -6472656733288646684
+      reeling_16: -5992104490562239710
+      reeling_17: -7925604924460672344
+      reeling_2: 2098156916045657354
+      reeling_3: 5744256116795676411
+      reeling_4: 1258683565294501508
+      reeling_5: -2928040474368888816
+      reeling_6: 8747926246618995014
+      reeling_7: 8106512336664407458
+      reeling_8: 8471025430657833548
+      reeling_9: -6484337734610682670
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

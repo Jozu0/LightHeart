@@ -347,7 +347,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shear_0: -1186434179284516330
+      shear_1: 613912465905437658
+      shear_2: -8796851251622751085
+      shear_3: -2961074938589505014
+      shear_4: 1333685608321272965
+      shear_5: 7369643299659417969
+      shear_6: 4166666656802373187
+      shear_7: -6457808520153627335
+      shear_8: -4097591838636622644
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

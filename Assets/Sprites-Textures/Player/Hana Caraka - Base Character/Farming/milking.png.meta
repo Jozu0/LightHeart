@@ -272,7 +272,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      milking_0: 3521200892635115542
+      milking_1: -4339316338690927674
+      milking_2: 7678807985360076820
+      milking_3: -5633918275108647881
+      milking_4: 8971280465788599908
+      milking_5: 5978025889642136185
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
