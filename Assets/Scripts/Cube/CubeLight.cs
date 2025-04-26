@@ -1,6 +1,7 @@
 using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using System;
 
 public enum CubeColor {White, Red, Blue, Green}
 public enum CubeLife {Zero, One, Two, Three} // 0: , 1: ,2: ,3: 6.5f
@@ -13,7 +14,7 @@ public class CubeLight : MonoBehaviour
     private CubeLife previousLife;
 
     [Header("Transition Parameters")]
-    [SerializeField] private float transitionTime;
+    [SerializeField] public float transitionTime;
 
     [Header("Light Colors")]
     [SerializeField] private Color whiteLight;
@@ -172,5 +173,11 @@ public class CubeLight : MonoBehaviour
         }
         previousLife = currentLife;
 
+    }
+
+    public void NextColor()
+    {
+        Debug.Log("prout");
+        currentColor = (CubeColor)(((int)currentColor + 1) % Enum.GetValues(typeof(CubeColor)).Length);
     }
 }

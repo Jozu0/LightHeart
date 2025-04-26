@@ -60,12 +60,14 @@ public class PlayerAction : MonoBehaviour
         if(collider2D.CompareTag("CubeHitBox")){
             isAlignToCube = true;
             cubeTransform = collider2D.transform.parent.transform;
+            cubeTransform.gameObject.GetComponent<CubeBehavior>().isInteractable = true;
         } 
 
     }
     private void OnTriggerExit2D(Collider2D collider2D)
     {   
         if(collider2D.CompareTag("CubeHitBox")){
+            cubeTransform.gameObject.GetComponent<CubeBehavior>().isInteractable = true;
             isAlignToCube = false;
             cubeTransform.SetParent(null);
             isGrabbing = false;
