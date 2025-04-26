@@ -5,12 +5,13 @@ public class PlayerMove : MonoBehaviour
 {
     [Header("Player References")]
     [SerializeField] private float moveSpeed;
-    [SerializeField] private float currentMoveSpeed;
+    [SerializeField] public float currentMoveSpeed;
     [SerializeField] private float grabbingMoveSpeed;
+    [SerializeField] private Collider2D playerCubeCollider;
     private Rigidbody2D rb;
     private PlayerAction playerAction;
     private Animator anim;
-    private Vector2 moveDirection;
+    public Vector2 moveDirection;
     private Vector2 lastMoveDirection;
     private bool isFacingRight = true;
 
@@ -72,9 +73,10 @@ public class PlayerMove : MonoBehaviour
     private void Flip()
     {
         isFacingRight = !isFacingRight;
-        Vector3 scale = transform.localScale;
-        scale.x *= -1;
-        transform.localScale = scale;
+        // Vector3 scale = transform.localScale;
+        // scale.x *= -1;
+        // transform.localScale = scale;
+        GetComponent<SpriteRenderer>().flipX = !isFacingRight;
     }
 
     private void FixedUpdate()
@@ -115,14 +117,30 @@ public class PlayerMove : MonoBehaviour
             {
                 HandlePushPull(transform.position.x, cubeTransform.position.x, moveDirection.x);
             }
-            else
-            {
-                anim.SetBool("Push", false);
-                anim.SetBool("Pull", false);
-            }
         }else{
             currentMoveSpeed = moveSpeed;
+            anim.SetBool("Push", false);
+            anim.SetBool("Pull", false);
         }
+
+
+        Vector2 direction = Vector2.zero;
+
+        if (Mathf.Abs(lastMoveDirection.x) > Mathf.Abs(lastMoveDirection.y))
+        {
+            direction = new Vector2(Mathf.Sign(lastMoveDirection.x)*0.8f, 0);
+        }
+        else
+        {
+            direction = new Vector2(0, Mathf.Sign(lastMoveDirection.y)*0.5f);
+        }
+
+        if (anim.GetBool("Pull"))
+        {
+            direction = -direction; // Inverse la direction si Pull
+        }
+
+        playerCubeCollider.offset = direction;
     }
 
     void HandlePushPull(float playerPos, float cubePos, float moveAxis)

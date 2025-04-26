@@ -12,6 +12,7 @@ public class PlayerAction : MonoBehaviour
     void Start()
     {
         playerMove = GetComponent<PlayerMove>();
+        isAlignToCube = false;
     }
 
     // Update is called once per frame
@@ -27,8 +28,6 @@ public class PlayerAction : MonoBehaviour
             isGrabbing = true;
             playerMove.isCurrentlyGrabbing = isGrabbing;
             playerMove.cubeTransform = cubeTransform;
-            cube = cubeTransform.gameObject;
-            cube.GetComponent<Rigidbody2D>().mass=1f;
             cubeTransform.SetParent(transform);
 
         }
@@ -38,11 +37,11 @@ public class PlayerAction : MonoBehaviour
 
     public void OffGrab()
     {   
-        isGrabbing = false;
-        playerMove.isCurrentlyGrabbing = isGrabbing;
-        cube.GetComponent<Rigidbody2D>().mass=999999f;
-        cube.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
-        cubeTransform.SetParent(null);
+        if(isAlignToCube)
+        {   isGrabbing = false;
+            playerMove.isCurrentlyGrabbing = isGrabbing;
+            cubeTransform.SetParent(null);
+        }
     }
 
     public void HealCube()
@@ -69,8 +68,8 @@ public class PlayerAction : MonoBehaviour
         if(collider2D.CompareTag("CubeHitBox")){
             isAlignToCube = false;
             cubeTransform.SetParent(null);
-            cube.GetComponent<Rigidbody2D>().mass=999999f;
-            cube.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+            isGrabbing = false;
+            playerMove.isCurrentlyGrabbing = isGrabbing;
         }
     }
 }
