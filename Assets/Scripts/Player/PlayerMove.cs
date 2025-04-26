@@ -3,15 +3,19 @@ using UnityEngine.InputSystem;
 
 public class PlayerMove : MonoBehaviour
 {
-    [Header("Références Player")]
-    [SerializeField]
-    private float moveSpeed;
-    public Rigidbody2D rb;
-    public Animator anim;
+    [Header("Player References")]
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float currentMoveSpeed;
+    [SerializeField] private float grabbingMoveSpeed;
+    private Rigidbody2D rb;
+    private PlayerAction playerAction;
+    private Animator anim;
     private Vector2 moveDirection;
     private Vector2 lastMoveDirection;
     private bool isFacingRight = true;
 
+    public bool isCurrentlyGrabbing;
+    public Transform cubeTransform;
     private void Awake()
     {
         if (rb == null)
@@ -27,6 +31,7 @@ public class PlayerMove : MonoBehaviour
 
     private void Start()
     {
+        currentMoveSpeed = moveSpeed;
         PlayerInput playerInput = GetComponent<PlayerInput>();
         if (playerInput != null)
         {
@@ -61,7 +66,7 @@ public class PlayerMove : MonoBehaviour
         {
             Flip();
         }
-        //pour flip le sprite si symétrique plus simple que beaucoup d'animation à mettre après
+        //pour flip le sprite si symï¿½trique plus simple que beaucoup d'animation ï¿½ mettre aprï¿½s
     }
 
     private void Flip()
@@ -81,7 +86,7 @@ public class PlayerMove : MonoBehaviour
     {
         if (rb)
         {
-            rb.linearVelocity = moveDirection * moveSpeed;
+            rb.linearVelocity = moveDirection * currentMoveSpeed;
         }
         else
         {
@@ -95,11 +100,35 @@ public class PlayerMove : MonoBehaviour
         {
             lastMoveDirection = moveDirection;
         }
-
         anim.SetFloat("MoveX", moveDirection.x);
         anim.SetFloat("MoveY", moveDirection.y);
         anim.SetFloat("MoveMagnitude", moveDirection.magnitude);
         anim.SetFloat("LastMoveX", lastMoveDirection.x);
         anim.SetFloat("LastMoveY", lastMoveDirection.y);
+        if(isCurrentlyGrabbing){
+            currentMoveSpeed = grabbingMoveSpeed;
+            if (moveDirection.y != 0 && moveDirection.x == 0)
+            {
+                HandlePushPull(transform.position.y, cubeTransform.position.y, moveDirection.y);
+            }
+            else if (moveDirection.x != 0 && moveDirection.y == 0)
+            {
+                HandlePushPull(transform.position.x, cubeTransform.position.x, moveDirection.x);
+            }
+            else
+            {
+                anim.SetBool("Push", false);
+                anim.SetBool("Pull", false);
+            }
+        }else{
+            currentMoveSpeed = moveSpeed;
+        }
+    }
+
+    void HandlePushPull(float playerPos, float cubePos, float moveAxis)
+    {
+        bool isPush = (playerPos < cubePos && moveAxis > 0) || (playerPos > cubePos && moveAxis < 0);
+        anim.SetBool("Push", isPush);
+        anim.SetBool("Pull", !isPush);
     }
 }
