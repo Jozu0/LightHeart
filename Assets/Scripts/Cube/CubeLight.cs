@@ -177,7 +177,25 @@ public class CubeLight : MonoBehaviour
 
     public void NextColor()
     {
-        Debug.Log("prout");
         currentColor = (CubeColor)(((int)currentColor + 1) % Enum.GetValues(typeof(CubeColor)).Length);
+    }
+
+    public void NextLife()
+    {
+        if(currentLife < CubeLife.Three){
+            currentLife = (CubeLife)((int)currentLife+1);
+        }
+    }
+
+    public void PreviousLife()
+    {
+        if(currentLife == CubeLife.Zero)
+        {
+            //GAMEOVER ENFT
+        }
+        if(currentLife> CubeLife.Zero)
+        {
+            currentLife = (CubeLife)((int)currentLife-1);
+        }
     }
 }

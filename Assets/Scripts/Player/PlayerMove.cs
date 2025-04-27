@@ -8,6 +8,7 @@ public class PlayerMove : MonoBehaviour
     [SerializeField] public float currentMoveSpeed;
     [SerializeField] private float grabbingMoveSpeed;
     [SerializeField] private Collider2D playerCubeCollider;
+    [SerializeField] private Collider2D playerActionCollider;
     private Rigidbody2D rb;
     private PlayerAction playerAction;
     private Animator anim;
@@ -139,7 +140,7 @@ public class PlayerMove : MonoBehaviour
         {
             direction = -direction; // Inverse la direction si Pull
         }
-
+        playerActionCollider.offset = direction;
         playerCubeCollider.offset = direction;
     }
 
@@ -149,4 +150,7 @@ public class PlayerMove : MonoBehaviour
         anim.SetBool("Push", isPush);
         anim.SetBool("Pull", !isPush);
     }
+
+
+
 }

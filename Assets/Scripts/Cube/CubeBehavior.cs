@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -42,5 +43,10 @@ public class CubeBehavior : MonoBehaviour
     private void Move(PlayerMove playerScript)
     {
         rb.linearVelocity = playerScript.moveDirection * playerScript.currentMoveSpeed;
+    }
+
+    public void Heal()
+    {
+        cubeLight.NextLife();
     }
 }
