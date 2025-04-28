@@ -14,7 +14,7 @@ public class ActionInputHandler : InputHandler
         {
             playerInput.actions["Grab"].performed += OnGrabPerformed;
             playerInput.actions["Grab"].canceled += OnGrabCanceled;
-            playerInput.actions["Heal"].performed += OnHealStarted;
+            playerInput.actions["Heal"].started += OnHealStarted;
             playerInput.actions["Attack"].started += OnAttackStarted;
         }
         else
