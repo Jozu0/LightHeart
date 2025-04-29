@@ -10,7 +10,11 @@ public class LightDetection : MonoBehaviour
     [SerializeField] private float verificationDelay;
     [SerializeField] List<GameObject> lightList;
     [SerializeField] public Color colorSum;
+    [SerializeField] private Color noColor;
+    [SerializeField] private float maxTimeInDark;
+    [SerializeField] private float timeSpentInDark; 
     private float lastDetection;
+
     void Start()
     {
         lastDetection = 0;
@@ -35,6 +39,10 @@ public class LightDetection : MonoBehaviour
                 }
             }
         }
+        if (gameObject.CompareTag("Player"))
+        {
+            IsPlayerInLight();
+        }
     }
 
     Collider2D[] GetAllTouchedColliders(Vector2 position, float detectionRange)
@@ -49,4 +57,13 @@ public class LightDetection : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, detectionRange);
     }
     
+    public void IsPlayerInLight()
+    {
+        if(colorSum==noColor)
+        {
+            Debug.Log("IL FAIT TOUT NOIR");
+        }
+    }
+
+
 }

@@ -15,6 +15,7 @@ public class CubeLight : MonoBehaviour
 
     [Header("Transition Parameters")]
     [SerializeField] public float transitionTime;
+    [SerializeField] public float transitionTimeEffet;
 
     [Header("Light Colors")]
     [SerializeField] private Color whiteLight;
@@ -29,12 +30,16 @@ public class CubeLight : MonoBehaviour
     [Header("One Life Parameters")]
     [SerializeField] private float oneLifeIntensity;
     [SerializeField] private float oneLifeFallOffStrength;
+    [SerializeField] private float oneLifeFallOffStrengthEffect;
     [Header("Two Life Parameters")]
     [SerializeField] private float twoLifeIntensity;
     [SerializeField] private float twoLifeFallOffStrength;
+    [SerializeField] private float twoLifeFallOffStrengthEffect;
+
     [Header("Three Life Parameters")]
     [SerializeField] private float threeLifeIntensity;
     [SerializeField] private float threeLifeFallOffStrength;
+    [SerializeField] private float threeLifeFallOffStrengthEffect;
 
     private Light2D light2D;
     
@@ -57,6 +62,7 @@ public class CubeLight : MonoBehaviour
         if(currentLife!=previousLife){
             LifeBehaviour();
         }
+
     }
 
     private void ColorBehaviour()
@@ -102,6 +108,7 @@ public class CubeLight : MonoBehaviour
 
     private void LifeBehaviour()
     {
+        DOTween.Kill(light2D);
         switch(currentLife)
         {
             case CubeLife.Zero: //Intensity : 0.01f
@@ -136,6 +143,17 @@ public class CubeLight : MonoBehaviour
                     oneLifeFallOffStrength,
                     transitionTime
                 ).SetEase(Ease.Linear));
+                
+                LifeToOne.OnComplete(() =>
+                {
+                    light2D.falloffIntensity = oneLifeFallOffStrength;
+                    DOTween.To(
+                    () => light2D.falloffIntensity,
+                    x => light2D.falloffIntensity = x,
+                    oneLifeFallOffStrengthEffect,   
+                    transitionTimeEffet
+                ).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).SetTarget(light2D);
+                });
                 break;
 
             case CubeLife.Two: //Intensity : 4, FallOff : 2, FallOffStrength : 0.6f
@@ -153,6 +171,17 @@ public class CubeLight : MonoBehaviour
                     twoLifeFallOffStrength,
                     transitionTime
                 ).SetEase(Ease.Linear));
+
+                LifeToTwo.OnComplete(() =>
+                {
+                    light2D.falloffIntensity = twoLifeFallOffStrength;
+                    DOTween.To(
+                    () => light2D.falloffIntensity,
+                    x => light2D.falloffIntensity = x,
+                    twoLifeFallOffStrengthEffect,   
+                    transitionTimeEffet
+                ).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).SetTarget(light2D);
+                });
                 break;
             case CubeLife.Three: //Intensity : 6.5, FallOff : 2, FallOffStrength : 0.5f
                 Sequence LifeToThree = DOTween.Sequence();
@@ -169,6 +198,17 @@ public class CubeLight : MonoBehaviour
                     threeLifeFallOffStrength,
                     transitionTime
                 ).SetEase(Ease.Linear));
+
+                LifeToThree.OnComplete(() =>
+                {
+                    light2D.falloffIntensity = threeLifeFallOffStrength;
+                    DOTween.To(
+                    () => light2D.falloffIntensity,
+                    x => light2D.falloffIntensity = x,
+                    threeLifeFallOffStrengthEffect,   
+                    transitionTimeEffet
+                ).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).SetTarget(light2D);
+                });
                 break; 
         }
         previousLife = currentLife;
