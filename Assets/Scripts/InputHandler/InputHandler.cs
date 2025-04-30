@@ -34,7 +34,7 @@ public abstract class InputHandler : MonoBehaviour
     protected abstract void RegisterInputActions();
     protected abstract void UnregisterInputActions();
 
-    // Helper pour avoir facilement accès au PlayerInput
+    // Helper pour avoir facilement accï¿½s au PlayerInput
     protected PlayerInput GetPlayerInput()
     {
         if (InputManager.Instance != null)

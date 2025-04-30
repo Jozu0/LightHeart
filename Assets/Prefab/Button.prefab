@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7026059914476976462}
   - component: {fileID: 3270124073306259995}
-  - component: {fileID: 4436344633944136069}
+  - component: {fileID: 4341208748644407937}
   m_Layer: 0
   m_Name: Button
   m_TagString: Untagged
@@ -88,7 +88,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4436344633944136069
+--- !u!114 &4341208748644407937
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -100,7 +100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 74475fc0ad23f2e43aa9c9ce8576ff0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRange: 1.9
+  detectionRange: 1.7
   verificationDelay: 3
   lightList: []
   colorSum: {r: 0, g: 0, b: 0, a: 0}
+  noColor: {r: 0, g: 0, b: 0, a: 0}
+  maxTimeInDark: 0
+  timeSpentInDark: 0

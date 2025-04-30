@@ -1,69 +1,74 @@
 using System.Collections.Generic;
-using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-public class LightDetection : MonoBehaviour
+namespace Lighting
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [SerializeField] private float detectionRange;
-    [SerializeField] private float verificationDelay;
-    [SerializeField] List<GameObject> lightList;
-    [SerializeField] public Color colorSum;
-    [SerializeField] private Color noColor;
-    [SerializeField] private float maxTimeInDark;
-    [SerializeField] private float timeSpentInDark; 
-    private float lastDetection;
-
-    void Start()
+    public class LightDetection : MonoBehaviour
     {
-        lastDetection = 0;
-    }
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        [SerializeField] private float detectionRange;
+        [SerializeField] private float verificationDelay;
+        [SerializeField] private List<GameObject> lightList;
+        [SerializeField] public Color colorSum;
+        [SerializeField] private Color noColor;
+        [SerializeField] private float maxTimeInDark;
+        [SerializeField] private float timeSpentInDark; 
+        private float m_LastDetection;
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Time.time >= lastDetection)
+        void Start()
         {
-            lightList = new List<GameObject>();
-            lastDetection = Time.time + verificationDelay;
-            colorSum = new Color(0,0,0,0);
-            Collider2D[] colliders = GetAllTouchedColliders(transform.position, detectionRange);
+            m_LastDetection = 0;
+        }
 
-            foreach (var collider in colliders)
+        // Update is called once per frame
+        private void Update()
+        {
+            if (Time.time >= m_LastDetection)
             {
-                if(collider.gameObject.CompareTag("CubeHitBox") && !lightList.Contains(collider.gameObject))
+                lightList = new List<GameObject>();
+                m_LastDetection = Time.time + verificationDelay;
+                colorSum = new Color(0,0,0,0);
+                Collider2D[] colliders = GetAllTouchedColliders(transform.position, detectionRange);
+
+                foreach (var collider2D in colliders)
                 {
-                    lightList.Add(collider.gameObject);
-                    colorSum += collider.gameObject.transform.parent.transform.GetChild(0).gameObject.GetComponent<Light2D>().color;
+                    if(collider2D.gameObject.CompareTag("CubeHitBox") && !lightList.Contains(collider2D.gameObject))
+                    {
+                        lightList.Add(collider2D.gameObject);
+                        colorSum += collider2D.gameObject.transform.parent.transform.GetChild(0).gameObject.GetComponent<Light2D>().color;
+                    }
                 }
             }
+            if (gameObject.CompareTag("Player"))
+            {
+                IsPlayerInLight();
+            }
         }
-        if (gameObject.CompareTag("Player"))
+
+        Collider2D[] GetAllTouchedColliders(Vector2 position, float range)
         {
-            IsPlayerInLight();
+            return Physics2D.OverlapCircleAll(position, range);
         }
-    }
-
-    Collider2D[] GetAllTouchedColliders(Vector2 position, float detectionRange)
-    {
-        return Physics2D.OverlapCircleAll(position, detectionRange);
-    }
 
 
-    void OnDrawGizmosSelected()
-    {
-        Gizmos.color = Color.yellow; // Couleur du cercle
-        Gizmos.DrawWireSphere(transform.position, detectionRange);
-    }
+        // void OnDrawGizmosSelected()
+        // {
+        //     Gizmos.color = Color.yellow; // Couleur du cercle
+        //     Gizmos.DrawWireSphere(transform.position, detectionRange);
+        // }
     
-    public void IsPlayerInLight()
-    {
-        if(colorSum==noColor)
+        private void IsPlayerInLight()
         {
-            Debug.Log("IL FAIT TOUT NOIR");
+            if(colorSum==noColor)
+            {
+            
+            }else{
+                timeSpentInDark=0; 
+            }
         }
+
+
+
     }
-
-
 }
