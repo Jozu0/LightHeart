@@ -1,4 +1,3 @@
-using Cube;
 using UnityEngine;
 
 public class PlayerAction : MonoBehaviour
@@ -32,7 +31,7 @@ public class PlayerAction : MonoBehaviour
     
     public void OnGrab()
     {
-        if(!isAlignToCube)
+        if(isAlignToCube)
         {
             isGrabbing = true;
             playerMove.isCurrentlyGrabbing = isGrabbing;

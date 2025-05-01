@@ -1,7 +1,5 @@
 using UnityEngine;
 
-namespace Cube
-{
     public class CubeBehavior : MonoBehaviour
     {
         private Rigidbody2D rb;
@@ -49,4 +47,3 @@ namespace Cube
             CubeLight.NextLife();
         }
     }
-}

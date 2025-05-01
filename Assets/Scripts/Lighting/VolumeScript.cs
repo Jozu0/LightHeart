@@ -3,8 +3,6 @@ using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
 using System;
-using Cube;
-using Lighting;
 
 public class VolumeScript : MonoBehaviour
 {

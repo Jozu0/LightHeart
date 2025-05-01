@@ -1,24 +1,20 @@
-using UnityEditor.VersionControl;
 using UnityEngine;
 
-
-namespace Enemies
-{
     public class EnemyBehaviour : MonoBehaviour
     {
         [Header("Detection Settings")]
-        public Transform cubeTransform;
-        public float detectionRadius = 4f;
-        public float chaseSpeed = 2.5f;
-        public float chaseTime = 4f;
-        public LayerMask obstacleLayer;
-        public Rigidbody2D rb;
-        public Animator anim;
-        public bool isFound;
-        public float rangeBat = 2;
-        public GameObject cube;
+        private Transform cubeTransform;
+        [SerializeField] private float detectionRadius = 4f;
+        [SerializeField] private float chaseSpeed = 2.5f;
+        [SerializeField] private float chaseTime = 4f;
+        private LayerMask obstacleLayer;
+        private Rigidbody2D rb;
+        private Animator anim;
+        [SerializeField] private bool isFound;
+        [SerializeField] private float rangeBat = 2;
+        private GameObject cube;
 
-        public enum EnemyState
+        private enum EnemyState
         {
             Search,
             Attack,
@@ -34,7 +30,7 @@ namespace Enemies
             isFound = false;
         }
 
-        void Update()
+        private void Update()
         {
             switch (currentState)
             {
@@ -50,7 +46,7 @@ namespace Enemies
             }
         }
 
-        public void Search()
+        private void Search()
         {
             if (isFound == false)
             {
@@ -64,13 +60,13 @@ namespace Enemies
             }
         }
 
-        public void Attack()
+        private void Attack()
         {
             //dotween nik ta mere la pute
             //currentState = EnemyState.Cooldown
         }
 
-        public void Cooldown()
+        private void Cooldown()
         {
 
         }
@@ -86,4 +82,3 @@ namespace Enemies
         }
 
     }
-}
