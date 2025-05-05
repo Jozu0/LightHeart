@@ -7,16 +7,15 @@ public class EnemyBehaviour : MonoBehaviour
     [Header("Detection Settings")]
     private Transform cubeTransform;
     [SerializeField] private float detectionRadius = 4f;
-    [SerializeField] private float chaseSpeed = 2.5f;
-    [SerializeField] private float chaseTime = 4f;
+    //[SerializeField] private float chaseSpeed = 2.5f;
+    //[SerializeField] private float chaseTime = 4f;
     private LayerMask obstacleLayer;
     private Rigidbody2D rb;
     private Animator anim;
     [SerializeField] private bool isFound;
-    [SerializeField] private float rangeBat = 2;
     private GameObject cube;
-
-
+    private bool isAttacking = false;
+    
 
 
     [Header("Cooldown Settings")]
@@ -35,6 +34,7 @@ public class EnemyBehaviour : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
         currentState = EnemyState.Search;
         isFound = false;
     }
@@ -57,7 +57,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void Search()
     {
-        Collider2D cubeCollider = Physics2D.OverlapCircle(transform.position, rangeBat);
+        Collider2D cubeCollider = Physics2D.OverlapCircle(transform.position, detectionRadius);
 
         if (isFound == false)
         {
@@ -72,6 +72,8 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void Attack()
     {
+        if (isAttacking) return;
+        isAttacking = true;
         Vector3 targetPos = cube.transform.position;
 
         transform.DOMove(targetPos, 0.5f)
@@ -81,6 +83,7 @@ public class EnemyBehaviour : MonoBehaviour
         {
             cooldownTimer = attackCooldownDuration;
             currentState = EnemyState.Cooldown;
+            isAttacking = false;
         });
     }
 
@@ -101,7 +104,14 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void TakeDamage()
     {
-
+        anim.SetTrigger("Die");
     }
 
+    
+    void OnDrawGizmos()
+    {
+        // Draw a yellow sphere at the transform's position
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+    }
 }
