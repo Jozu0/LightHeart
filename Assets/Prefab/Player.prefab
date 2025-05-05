@@ -114,6 +114,7 @@ GameObject:
   - component: {fileID: 6962635275198440377}
   - component: {fileID: 6798943911183338833}
   - component: {fileID: 1693067248452281674}
+  - component: {fileID: 6394796122568098766}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -433,9 +434,17 @@ MonoBehaviour:
   detectionRange: 2.5
   verificationDelay: 0.5
   lightList: []
-  colorSum: {r: 1, g: 1, b: 1, a: 0}
+  colorSum: {r: 0, g: 0, b: 0, a: 0}
   noColor: {r: 0, g: 0, b: 0, a: 0}
-  maxTimeInDark: 8
-  timeGetBackNormal: 3
+  maxTimeInDark: 2.5
+  timeGetBackNormal: 0.5
   dyingScreenColorDesactivate: {r: 0.49411765, g: 0.48235294, b: 0.48235294, a: 0}
   dyingScreenColorActivate: {r: 0.49411765, g: 0.48235294, b: 0.48235294, a: 1}
+--- !u!81 &6394796122568098766
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4017613437417759198}
+  m_Enabled: 1

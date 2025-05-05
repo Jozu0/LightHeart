@@ -56,6 +56,7 @@ public class PlayerAction : MonoBehaviour
         {
             lastActionTime = Time.time + healDelay;
             anim.SetTrigger("Heal");
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.swordAttack);
         }
     }
 
@@ -66,6 +67,7 @@ public class PlayerAction : MonoBehaviour
         {
             lastActionTime = Time.time + attackDelay;
             anim.SetTrigger("Attack");
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.swordAttack);
 
         }
     }

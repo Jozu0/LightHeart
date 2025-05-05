@@ -20,7 +20,7 @@ using UnityEngine.Rendering.Universal;
         [SerializeField] private Color dyingScreenColorDesactivate;
         [SerializeField] private Color dyingScreenColorActivate;
         private bool isDoingTransition;
-        private bool playerIsInTheDark = false;
+        private bool playerIsInTheDark;
         private Sequence currentSequence;
 
         void Start()

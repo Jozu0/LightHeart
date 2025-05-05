@@ -40,6 +40,10 @@ public class EnemyBehaviour : MonoBehaviour
         isFound = false;
     }
 
+    private void Start()
+    {
+        AudioManager.Instance.PlaySfxLoop(AudioManager.Instance.enemyClap);
+    }
     private void Update()
     {
         switch (currentState)
@@ -80,7 +84,7 @@ public class EnemyBehaviour : MonoBehaviour
         if (isAttacking) return;
         isAttacking = true;
         Vector3 targetPos = cube.transform.position;
-
+        AudioManager.Instance.PlaySfx(AudioManager.Instance.enemyAttack);
         transform.DOMove(targetPos, 0.5f)
         .SetLoops(2, LoopType.Yoyo)
         .SetEase(Ease.InOutSine)
@@ -104,12 +108,14 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Died()
     {
+        AudioManager.Instance.PlayWalk(AudioManager.Instance.enemyDying);
         gameObject.SetActive(false);
     }
 
     public void TakeDamage()
     {
         anim.SetTrigger("Die");
+        AudioManager.Instance.PlayWalk(AudioManager.Instance.enemyGetHit);
     }
 
     

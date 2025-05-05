@@ -179,6 +179,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isInteractable: 0
+  pushOrGrabFxDelay: 0.75
 --- !u!114 &1752915406044387421
 MonoBehaviour:
   m_ObjectHideFlags: 0

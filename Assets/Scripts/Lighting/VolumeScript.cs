@@ -1,8 +1,6 @@
-using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering;
-using System;
 
 public class VolumeScript : MonoBehaviour
 {

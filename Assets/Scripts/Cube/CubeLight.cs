@@ -234,6 +234,7 @@ using UnityEngine.Rendering.Universal;
         public void NextColor()
         {
             currentColor = (CubeColor)(((int)currentColor + 1) % Enum.GetValues(typeof(CubeColor)).Length);
+            AudioManager.Instance.PlayWalk(AudioManager.Instance.colorChangeCube);
         }
 
         public void NextLife()

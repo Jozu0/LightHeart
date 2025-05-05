@@ -3,13 +3,11 @@ using UnityEngine;
 public class PlayerAttack_Heal : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    
-    
     [SerializeField] private bool isInFrameToAttack;
     [SerializeField] private bool isInFrameToHeal;
     public Transform cubeTransform;
     private Collider2D attackHealCollider;
-    void Start()
+    private void Start()
     {
         isInFrameToAttack = false;
         isInFrameToHeal = false;
@@ -17,7 +15,7 @@ public class PlayerAttack_Heal : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         
     }
@@ -27,12 +25,14 @@ public class PlayerAttack_Heal : MonoBehaviour
         if(collider2D.CompareTag("CubeHitBox")){
             if(isInFrameToHeal){
                 collider2D.transform.parent.transform.gameObject.GetComponent<CubeBehavior>().Heal();
+                AudioManager.Instance.PlaySfx(AudioManager.Instance.swordHeal);
             }
         } 
         if(collider2D.CompareTag("Enemy")){
             if(isInFrameToAttack)
             {
                 collider2D.gameObject.GetComponent<EnemyBehaviour>().TakeDamage();
+                AudioManager.Instance.PlaySfx(AudioManager.Instance.enemyGetHit);
             }
         } 
 

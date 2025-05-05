@@ -15,7 +15,7 @@ public class PlayerMove : MonoBehaviour
     public Vector2 moveDirection;
     private Vector2 lastMoveDirection;
     private bool isFacingRight = true;
-
+    private bool isWalking = false;
     public bool isCurrentlyGrabbing;
     public Transform cubeTransform;
     private void Awake()
@@ -55,6 +55,21 @@ public class PlayerMove : MonoBehaviour
     private void Update()
     {
         Animate();
+        bool shouldWalk = rb.linearVelocity.sqrMagnitude > 0.01f;
+
+        if (shouldWalk && !isWalking)
+        {
+            // on démarre la marche
+            AudioManager.Instance.PlayWalk(AudioManager.Instance.walk);
+            isWalking = true;
+        }
+        else if (!shouldWalk && isWalking)
+        {
+            // on arrête la marche
+            AudioManager.Instance.StopWalking();
+            Debug.Log("là il marche PAS hein");
+            isWalking = false;
+        }
     }
 
     public void SetMoveDirection(Vector2 direction)

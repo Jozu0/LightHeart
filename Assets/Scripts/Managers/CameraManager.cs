@@ -4,7 +4,7 @@ public class CameraManager : MonoBehaviour
 {
     [Header("Target Settings")]
     public Transform target;
-    public float smoothSpeed = 5f; // Valeur plus élevée car on l'utilise avec deltaTime
+    public float smoothSpeed = 5f; // Valeur plus ï¿½levï¿½e car on l'utilise avec deltaTime
     public Vector3 offset = new Vector3(0, 0, -10);
 
     [Header("Boundary Settings")]
@@ -15,20 +15,21 @@ public class CameraManager : MonoBehaviour
     public float maxY = 10f;
 
     [Header("Advanced Settings")]
-    public float snapDistance = 0.05f; // Distance en dessous de laquelle la caméra se positionne exactement sur la cible
+    public float snapDistance = 0.05f; // Distance en dessous de laquelle la camï¿½ra se positionne exactement sur la cible
 
+    [SerializeField] private GameObject dyingScreen;
     private void LateUpdate()
     {
         if (!target)
             return;
 
-        // Calcule la position désirée
+        // Calcule la position dï¿½sirï¿½e
         Vector3 desiredPosition = target.position + offset;
 
-        // Calcule la distance à la position désirée
+        // Calcule la distance ï¿½ la position dï¿½sirï¿½e
         float distance = Vector3.Distance(transform.position, desiredPosition);
 
-        // Si on est très proche, snap directement à la position pour éviter les micro-tremblements
+        // Si on est trï¿½s proche, snap directement ï¿½ la position pour ï¿½viter les micro-tremblements
         if (distance < snapDistance)
         {
             transform.position = desiredPosition;
@@ -42,7 +43,7 @@ public class CameraManager : MonoBehaviour
             smoothSpeed * Time.deltaTime
         );
 
-        // Applique les limites si activées
+        // Applique les limites si activï¿½es
         if (useBoundaries)
         {
             smoothedPosition.x = Mathf.Clamp(smoothedPosition.x, minX, maxX);
@@ -51,9 +52,11 @@ public class CameraManager : MonoBehaviour
 
         // Assigne la position finale
         transform.position = smoothedPosition;
+        dyingScreen.transform.position =  transform.position;
+
     }
 
-    // Méthode pour définir les limites de la caméra en fonction des limites de la carte
+    // Mï¿½thode pour dï¿½finir les limites de la camï¿½ra en fonction des limites de la carte
     public void SetBoundaries(float minX, float maxX, float minY, float maxY)
     {
         this.minX = minX;
@@ -61,4 +64,5 @@ public class CameraManager : MonoBehaviour
         this.minY = minY;
         this.maxY = maxY;
     }
+
 }
