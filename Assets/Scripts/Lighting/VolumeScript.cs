@@ -8,19 +8,18 @@ public class VolumeScript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     
-    [SerializeField] private FilmGrain  grain;
-    [SerializeField] private Texture2D lightSp;
-    [SerializeField] private Texture2D darkSp;
+    [SerializeField] public FilmGrain  grain;
+    [SerializeField] public Texture2D lightSp;
+    [SerializeField] public Texture2D darkSp;
     [SerializeField] private Volume volume;
     [SerializeField] private GameObject cube;
-    [SerializeField] private CubeLight cubeLight;
     [SerializeField] private GameObject player;
     [SerializeField] private LightDetection lightDetection;
     
     void Start()
     {
         volume.profile.TryGet<FilmGrain>(out grain);
-        grain.texture.Override(lightSp); 
+        grain.texture.Override(darkSp); 
     }
 
     // Update is called once per frame
@@ -29,13 +28,4 @@ public class VolumeScript : MonoBehaviour
 
     }
 
-    void MoreGrain()
-    {
-
-    }
-
-    void LessGrain()
-    {
-
-    }
 }

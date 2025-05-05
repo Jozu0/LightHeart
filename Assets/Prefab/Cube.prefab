@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 3390412529769864283}
   m_Layer: 6
   m_Name: CubeLight2D
-  m_TagString: Untagged
+  m_TagString: Cube
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -370,15 +370,25 @@ MonoBehaviour:
   currentColor: 0
   currentLife: 3
   transitionTime: 1
+  transitionTimeEffect: 0
   whiteLight: {r: 0.6, g: 0.6, b: 0.6, a: 1}
   redLight: {r: 0.58431375, g: 0, b: 0, a: 1}
   blueLight: {r: 0, g: 0, b: 0.6, a: 1}
   greenLight: {r: 0, g: 0.6, b: 0, a: 1}
   zeroLifeIntensity: 0.01
   zeroLifeFallOffStrength: 1
+  zeroLifeGrainIntensity: 0.9
   oneLifeIntensity: 1.5
   oneLifeFallOffStrength: 0.7
+  oneLifeFallOffStrengthEffect: 0.65
+  oneLifeGrainIntensity: 0.6
   twoLifeIntensity: 4
   twoLifeFallOffStrength: 0.5
+  twoLifeFallOffStrengthEffect: 0.45
+  twoLifeGrainIntensity: 0.3
   threeLifeIntensity: 6.5
-  threeLifeFallOffStrength: 0
+  threeLifeFallOffStrength: 0.15
+  threeLifeFallOffStrengthEffect: 0.1
+  threeLifeGrainIntensity: 0.15
+  light2D: {fileID: 0}
+  grain: {fileID: 0}

@@ -41,6 +41,7 @@ public class PlayerAttack_Heal : MonoBehaviour
     public void InFrameToAttack(){
         isInFrameToAttack = !isInFrameToAttack;
         attackHealCollider.enabled = !attackHealCollider.enabled;
+        
     }
 
     public void InFrameToHeal(){

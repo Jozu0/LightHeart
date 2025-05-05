@@ -1,5 +1,6 @@
 using UnityEngine;
 using DG.Tweening;
+using UnityEngine.Rendering.Universal;
 
 
 public class EnemyBehaviour : MonoBehaviour
@@ -10,12 +11,11 @@ public class EnemyBehaviour : MonoBehaviour
     //[SerializeField] private float chaseSpeed = 2.5f;
     //[SerializeField] private float chaseTime = 4f;
     private LayerMask obstacleLayer;
-    private Rigidbody2D rb;
     private Animator anim;
     [SerializeField] private bool isFound;
     private GameObject cube;
     private bool isAttacking = false;
-    
+    private Light2D light2D;
 
 
     [Header("Cooldown Settings")]
@@ -33,8 +33,9 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        light2D = GetComponent<Light2D>();
+        light2D.enabled = false;
         currentState = EnemyState.Search;
         isFound = false;
     }
@@ -57,16 +58,20 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void Search()
     {
-        Collider2D cubeCollider = Physics2D.OverlapCircle(transform.position, detectionRadius);
-
+        Collider2D[] listCollider = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
         if (isFound == false)
         {
-            if (cubeCollider.gameObject.CompareTag("Cube"))
+            foreach (Collider2D collider2D in listCollider)
             {
-                isFound = true;
-                cube = cubeCollider.gameObject;
-                currentState = EnemyState.Attack;
+                if (collider2D.gameObject.CompareTag("Cube"))
+                {
+                    isFound = true;
+                    cube = collider2D.gameObject;
+                    currentState = EnemyState.Attack;
+                    return;
+                }
             }
+           
         }
     }
 
@@ -113,5 +118,22 @@ public class EnemyBehaviour : MonoBehaviour
         // Draw a yellow sphere at the transform's position
         Gizmos.color = Color.yellow;
         Gizmos.DrawWireSphere(transform.position, detectionRadius);
+    }
+
+    private void OnTriggerEnter2D(Collider2D collider)
+    {
+        if (isAttacking)
+        {
+            if (collider.gameObject.CompareTag("Cube"))
+            {
+                CubeLight cubeLight = collider.gameObject.transform.GetChild(0).gameObject.GetComponent<CubeLight>();
+                if (cubeLight.currentLife != CubeLife.Zero)
+                {
+                    light2D.enabled = true;
+                    light2D.color = collider.gameObject.transform.GetChild(0).GetComponent<Light2D>().color;
+                    cubeLight.PreviousLife();
+                }
+            }
+        }
     }
 }

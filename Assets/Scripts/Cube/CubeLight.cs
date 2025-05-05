@@ -27,26 +27,32 @@ using UnityEngine.Rendering.Universal;
         [Header("Zero Life Parameters")]
         [SerializeField] private float zeroLifeIntensity;
         [SerializeField] private float zeroLifeFallOffStrength;
+        [SerializeField] private float zeroLifeGrainIntensity;
         [Header("One Life Parameters")]
         [SerializeField] private float oneLifeIntensity;
         [SerializeField] private float oneLifeFallOffStrength;
         [SerializeField] private float oneLifeFallOffStrengthEffect;
+        [SerializeField] private float oneLifeGrainIntensity;
         [Header("Two Life Parameters")]
         [SerializeField] private float twoLifeIntensity;
         [SerializeField] private float twoLifeFallOffStrength;
         [SerializeField] private float twoLifeFallOffStrengthEffect;
-
+        [SerializeField] private float twoLifeGrainIntensity;
         [Header("Three Life Parameters")]
         [SerializeField] private float threeLifeIntensity;
         [SerializeField] private float threeLifeFallOffStrength;
         [SerializeField] private float threeLifeFallOffStrengthEffect;
+        [SerializeField] private float threeLifeGrainIntensity;
 
-        private Light2D light2D;
+        
+        [SerializeField] private Light2D light2D;
+        [SerializeField] private FilmGrain grain;
     
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         void Start()
         {
             light2D = GetComponent<Light2D>();
+            grain = GameObject.FindGameObjectWithTag("Volume").GetComponent<VolumeScript>().grain;
             previousColor = currentColor;
             previousLife = currentLife;
        
@@ -125,6 +131,9 @@ using UnityEngine.Rendering.Universal;
                         zeroLifeFallOffStrength,
                         transitionTime
                     ).SetEase(Ease.Linear));
+                    
+                    grain.active = true;
+                    grain.intensity.value = zeroLifeGrainIntensity;
                     break;
                 case CubeLife.One: //Intensity : 1.5, FallOff : 2, FallOffStrength : 0.75f
                     Sequence lifeToOne = DOTween.Sequence();
@@ -152,6 +161,9 @@ using UnityEngine.Rendering.Universal;
                             transitionTimeEffect
                         ).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).SetTarget(light2D);
                     });
+                    
+                    grain.active = true;
+                    grain.intensity.value = oneLifeGrainIntensity;
                     break;
 
                 case CubeLife.Two: //Intensity : 4, FallOff : 2, FallOffStrength : 0.6f
@@ -180,6 +192,9 @@ using UnityEngine.Rendering.Universal;
                             transitionTimeEffect
                         ).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).SetTarget(light2D);
                     });
+                    
+                    grain.active = true;
+                    grain.intensity.value = twoLifeGrainIntensity;
                     break;
                 case CubeLife.Three: //Intensity : 6.5, FallOff : 2, FallOffStrength : 0.5f
                     Sequence lifeToThree = DOTween.Sequence();
@@ -207,6 +222,9 @@ using UnityEngine.Rendering.Universal;
                             transitionTimeEffect
                         ).SetEase(Ease.Linear).SetLoops(-1, LoopType.Yoyo).SetTarget(light2D);
                     });
+                    
+                    grain.active = true;
+                    grain.intensity.value = threeLifeGrainIntensity;
                     break; 
             }
             previousLife = currentLife;
@@ -227,10 +245,6 @@ using UnityEngine.Rendering.Universal;
 
         public void PreviousLife()
         {
-            if(currentLife == CubeLife.Zero)
-            {
-                //GAME OVER ENFT
-            }
             if(currentLife> CubeLife.Zero)
             {
                 currentLife = (CubeLife)((int)currentLife-1);

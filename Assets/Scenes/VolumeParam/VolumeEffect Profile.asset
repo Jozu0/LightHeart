@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: VolumeEffect Profile
   m_EditorClassIdentifier: 
   components:
-  - {fileID: 5950431175809112849}
---- !u!114 &5950431175809112849
+  - {fileID: 7949652796051894638}
+--- !u!114 &7949652796051894638
 MonoBehaviour:
   m_ObjectHideFlags: 3
   m_CorrespondingSourceObject: {fileID: 0}

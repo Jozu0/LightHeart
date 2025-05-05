@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
@@ -11,12 +12,26 @@ using UnityEngine.Rendering.Universal;
         [SerializeField] public Color colorSum;
         [SerializeField] private Color noColor;
         [SerializeField] private float maxTimeInDark;
-        [SerializeField] private float timeSpentInDark; 
+        [SerializeField] private float timeGetBackNormal; 
         private float m_LastDetection;
+        private VolumeScript volumeScript;
+        private FilmGrain grain;
+        private SpriteRenderer dyingScreenTexture; 
+        [SerializeField] private Color dyingScreenColorDesactivate;
+        [SerializeField] private Color dyingScreenColorActivate;
+        private bool isDoingTransition;
+        private bool playerIsInTheDark = false;
+        private Sequence currentSequence;
 
         void Start()
         {
             m_LastDetection = 0;
+            if (gameObject.CompareTag("Player"))
+            {
+                volumeScript = GameObject.FindGameObjectWithTag("Volume").GetComponent<VolumeScript>();
+                grain = volumeScript.grain;
+                dyingScreenTexture = GameObject.FindGameObjectWithTag("DyingScreen").GetComponent<SpriteRenderer>();
+            }
         }
 
         // Update is called once per frame
@@ -34,14 +49,17 @@ using UnityEngine.Rendering.Universal;
                     if(collider2D.gameObject.CompareTag("CubeHitBox") && !lightList.Contains(collider2D.gameObject))
                     {
                         lightList.Add(collider2D.gameObject);
-                        colorSum += collider2D.gameObject.transform.parent.transform.GetChild(0).gameObject.GetComponent<Light2D>().color;
+                        colorSum += collider2D.gameObject.transform.parent.transform.GetChild(0).gameObject
+                            .GetComponent<Light2D>().color;
                     }
                 }
+                if (gameObject.CompareTag("Player"))
+                {
+                    IsPlayerInLight();
+                }
             }
-            if (gameObject.CompareTag("Player"))
-            {
-                IsPlayerInLight();
-            }
+            
+            
         }
 
         Collider2D[] GetAllTouchedColliders(Vector2 position, float range)
@@ -58,14 +76,63 @@ using UnityEngine.Rendering.Universal;
     
         private void IsPlayerInLight()
         {
-            if(colorSum==noColor)
+            if (IsColorApproximately(colorSum, noColor) && !playerIsInTheDark)
             {
-            
-            }else{
-                timeSpentInDark=0; 
+                playerIsInTheDark = true;
+
+                currentSequence?.Kill(); // ⛔ kill animation en cours
+
+                grain.texture.value = volumeScript.darkSp;
+                currentSequence = DOTween.Sequence();
+
+                currentSequence.Join(DOTween.To(
+                    () => grain.intensity.value,
+                    x => grain.intensity.value = x,
+                    1,
+                    maxTimeInDark
+                ).SetEase(Ease.Linear));
+
+                currentSequence.Join(DOTween.To(
+                    () => dyingScreenTexture.color,
+                    x => dyingScreenTexture.color = x,
+                    dyingScreenColorActivate,
+                    maxTimeInDark
+                ).SetEase(Ease.Linear));
+
+                currentSequence.OnComplete(() =>
+                {
+                    
+                });
             }
+            else if (!IsColorApproximately(colorSum, noColor) && playerIsInTheDark)
+            {
+                playerIsInTheDark = false;
+
+                currentSequence?.Kill(); // ⛔ kill animation en cours
+
+                currentSequence = DOTween.Sequence();
+                currentSequence.Join(DOTween.To(
+                    () => grain.intensity.value,
+                    x => grain.intensity.value = x,
+                    0.15f,
+                    timeGetBackNormal
+                ).SetEase(Ease.Linear));
+    
+                currentSequence.Join(DOTween.To(
+                    () => dyingScreenTexture.color,
+                    x => dyingScreenTexture.color = x,
+                    dyingScreenColorDesactivate,
+                    timeGetBackNormal
+                ).SetEase(Ease.Linear));
+            }
+
+
         }
-
-
-
+        
+        private bool IsColorApproximately(Color a, Color b, float tolerance = 0.05f)
+        {
+            return Mathf.Abs(a.r - b.r) < tolerance &&
+                   Mathf.Abs(a.g - b.g) < tolerance &&
+                   Mathf.Abs(a.b - b.b) < tolerance;
+        }
     }

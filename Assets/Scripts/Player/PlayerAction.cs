@@ -66,6 +66,7 @@ public class PlayerAction : MonoBehaviour
         {
             lastActionTime = Time.time + attackDelay;
             anim.SetTrigger("Attack");
+
         }
     }
 

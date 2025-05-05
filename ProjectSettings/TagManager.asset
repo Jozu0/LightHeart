@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Button
   - Volume
+  - DyingScreen
   layers:
   - Default
   - TransparentFX
@@ -17,7 +18,7 @@ TagManager:
   - Water
   - UI
   - Light
-  - 
+  - DeathScreen
   - 
   - 
   - 
@@ -48,6 +49,9 @@ TagManager:
     locked: 0
   - name: Walls
     uniqueID: 2808401753
+    locked: 0
+  - name: DeathScreen
+    uniqueID: 4256154863
     locked: 0
   m_RenderingLayers:
   - Default
