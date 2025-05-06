@@ -191,7 +191,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c587758103a358478387db5ca09747e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  detectionRadius: 2
+  detectionRadius: 3
+  soundRadius: 4
   isFound: 0
   attackCooldownDuration: 2
 --- !u!114 &8996238716584135575

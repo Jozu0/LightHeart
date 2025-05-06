@@ -3,7 +3,7 @@ using DG.Tweening;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
 
-    public enum CubeColor {White, Red, Blue, Green}
+    public enum CubeColor {Red, Blue, Green}
     public enum CubeLife {Zero, One, Two, Three} // 0: , 1: ,2: ,3: 6.5f
     public class CubeLight : MonoBehaviour
     {
@@ -55,6 +55,9 @@ using UnityEngine.Rendering.Universal;
             grain = GameObject.FindGameObjectWithTag("Volume").GetComponent<VolumeScript>().grain;
             previousColor = currentColor;
             previousLife = currentLife;
+            currentColor = CubeColor.Red;
+            light2D.color = redLight;
+            currentLife = CubeLife.Three;
        
         }
 
@@ -74,14 +77,6 @@ using UnityEngine.Rendering.Universal;
         {
             switch(currentColor)
             {
-                case CubeColor.White:
-                    DOTween.To(
-                        () => light2D.color,
-                        x => light2D.color = x,
-                        whiteLight,
-                        transitionTime
-                    ).SetEase(Ease.Linear);
-                    break;
                 case CubeColor.Red:
                     DOTween.To(
                         () => light2D.color,
@@ -234,7 +229,7 @@ using UnityEngine.Rendering.Universal;
         public void NextColor()
         {
             currentColor = (CubeColor)(((int)currentColor + 1) % Enum.GetValues(typeof(CubeColor)).Length);
-            AudioManager.Instance.PlayWalk(AudioManager.Instance.colorChangeCube);
+            AudioManager.Instance.PlaySfx(AudioManager.Instance.colorChangeCube);
         }
 
         public void NextLife()

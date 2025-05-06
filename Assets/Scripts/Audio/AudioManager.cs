@@ -30,6 +30,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip enemyClap;
     public AudioClip randomScaryNoise1;
     public AudioClip randomScaryNoise2;
+    public AudioClip doorOpen;
+    public AudioClip pressurePlateActivate;
+    public AudioClip caveNoise; 
+    
     private string currentScene = "";
 
 
@@ -55,11 +59,11 @@ public class AudioManager : MonoBehaviour
         if (sceneName != currentScene)
         {
             currentScene = sceneName;
-            if (sceneName == "MainGameScene")
+            if (sceneName == "MainMenuScene")
             {
                 PlayMusic(sceneName,menuMusic);
 
-            }else if (sceneName == "Adam")
+            }else
             {
                 PlayMusic(sceneName,backgroundNoise);
             }

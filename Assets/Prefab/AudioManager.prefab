@@ -48,15 +48,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44f8f5a1e2f0239498e4b20826bb8a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSource: {fileID: 4023251930027504508}
+  MusicSource: {fileID: 4023251930027504508}
   SFXSource: {fileID: 2153597464862732434}
-  walkingSource: {fileID: 3608630073774352403}
+  WalkingSource: {fileID: 3608630073774352403}
   SFXLoopSource: {fileID: 653848524063362191}
-  audioMixer: {fileID: 24100000, guid: b2c6dca74dfcdd740b8cd274803599a3, type: 2}
+  AudioMixer: {fileID: 24100000, guid: b2c6dca74dfcdd740b8cd274803599a3, type: 2}
   menuMusic: {fileID: 0}
   backgroundNoise: {fileID: 8300000, guid: c47aacd0d550e054cbac65b74fa18d61, type: 3}
   death: {fileID: 8300000, guid: 1f240b3c8c95e954fbccf54e2d9024ee, type: 3}
-  walk: {fileID: 8300000, guid: e425767e97cbfb548944ac8acb79c472, type: 3}
+  walk: {fileID: 8300000, guid: 3abeb792f8721ff418da11b98852d62b, type: 3}
   damageTakenCube: {fileID: 8300000, guid: c647521ef0453f548bb244e0db51a2e4, type: 3}
   swordAttack: {fileID: 8300000, guid: 100f1d715e3ad3545a0517c7599e3b00, type: 3}
   swordHeal: {fileID: 8300000, guid: 4b5c95051e516c34fa6272d52f581ec4, type: 3}
@@ -68,6 +68,9 @@ MonoBehaviour:
   enemyClap: {fileID: 8300000, guid: 60d2f2bc08c599343b8f41173e8d4ec2, type: 3}
   randomScaryNoise1: {fileID: 8300000, guid: 42dcd99e00ffa1d49a4ae2fb03dd135c, type: 3}
   randomScaryNoise2: {fileID: 8300000, guid: babe2c663e2cb2e4086cf532ffad62db, type: 3}
+  doorOpen: {fileID: 8300000, guid: 98e004fe224e7774cafdd13bf538bd02, type: 3}
+  pressurePlateActivate: {fileID: 8300000, guid: e3642f01e7c36e44985c613f934bd601, type: 3}
+  caveNoise: {fileID: 8300000, guid: c7b1c5504914caf4e8d5c8e470ab0e0e, type: 3}
 --- !u!82 &4023251930027504508
 AudioSource:
   m_ObjectHideFlags: 0
@@ -222,7 +225,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0

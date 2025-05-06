@@ -22,6 +22,7 @@ using UnityEngine.Rendering.Universal;
         private bool isDoingTransition;
         private bool playerIsInTheDark;
         private Sequence currentSequence;
+        public bool isPushedLightDetect;
 
         void Start()
         {
@@ -37,6 +38,7 @@ using UnityEngine.Rendering.Universal;
         // Update is called once per frame
         private void Update()
         {
+            if (gameObject.CompareTag("PressurePlate") && isPushedLightDetect == true) return;
             if (Time.time >= m_LastDetection)
             {
                 lightList = new List<GameObject>();
@@ -80,7 +82,7 @@ using UnityEngine.Rendering.Universal;
             {
                 playerIsInTheDark = true;
 
-                currentSequence?.Kill(); // ⛔ kill animation en cours
+                currentSequence?.Kill();
 
                 grain.texture.value = volumeScript.darkSp;
                 currentSequence = DOTween.Sequence();
