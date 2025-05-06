@@ -7,11 +7,13 @@ public class PlayerAttack_Heal : MonoBehaviour
     [SerializeField] private bool isInFrameToHeal;
     public Transform cubeTransform;
     private Collider2D attackHealCollider;
+    private BoxCollider2D boxCollider2DInteractCube; 
     private void Start()
     {
         isInFrameToAttack = false;
         isInFrameToHeal = false;
         attackHealCollider = GetComponent<Collider2D>();
+        boxCollider2DInteractCube = transform.parent.GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -38,14 +40,21 @@ public class PlayerAttack_Heal : MonoBehaviour
 
     }
 
-    public void InFrameToAttack(){
-        isInFrameToAttack = !isInFrameToAttack;
-        attackHealCollider.enabled = !attackHealCollider.enabled;
+    public void SetAttackFrameState(bool active){
+        isInFrameToAttack = active;
+        UpdateColliderState();
         
     }
 
-    public void InFrameToHeal(){
-        isInFrameToHeal = !isInFrameToHeal;
-        attackHealCollider.enabled = !attackHealCollider.enabled;
+    public void SetHealFrameState(bool active){
+        isInFrameToHeal = active;
+        UpdateColliderState();
+        
+    }
+
+    public void UpdateColliderState()
+    {
+        attackHealCollider.enabled = isInFrameToHeal || isInFrameToAttack;
+        boxCollider2DInteractCube.enabled = !attackHealCollider.enabled;
     }
 }

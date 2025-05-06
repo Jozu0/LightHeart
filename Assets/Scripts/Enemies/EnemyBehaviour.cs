@@ -7,17 +7,20 @@ public class EnemyBehaviour : MonoBehaviour
 {
     [Header("Detection Settings")]
     private Transform cubeTransform;
-    [SerializeField] private float detectionRadius = 4f;
+    [SerializeField] private float detectionRadius = 2f;
+    [SerializeField] private float soundRadius = 4f;
     //[SerializeField] private float chaseSpeed = 2.5f;
     //[SerializeField] private float chaseTime = 4f;
     private LayerMask obstacleLayer;
     private Animator anim;
     [SerializeField] private bool isFound;
     private GameObject cube;
-    private bool isAttacking = false;
+    private bool isAttacking;
     private Light2D light2D;
-
-
+    private bool isInactive;
+    private GameObject player;
+    private bool isInSoundRange;
+    
     [Header("Cooldown Settings")]
     [SerializeField] private float attackCooldownDuration = 5f;
     private float cooldownTimer;
@@ -43,11 +46,13 @@ public class EnemyBehaviour : MonoBehaviour
     private void Start()
     {
         AudioManager.Instance.PlaySfxLoop(AudioManager.Instance.enemyClap);
+        cube = GameObject.FindGameObjectWithTag("Cube");
     }
     private void Update()
     {
         switch (currentState)
         {
+
             case EnemyState.Search:
                 Search();
                 break;
@@ -60,22 +65,26 @@ public class EnemyBehaviour : MonoBehaviour
         }
     }
 
+        
     private void Search()
     {
-        Collider2D[] listCollider = Physics2D.OverlapCircleAll(transform.position, detectionRadius);
-        if (isFound == false)
+        float distance = Vector2.Distance(transform.position, cube.transform.position);
+        bool nowInSoundRange = distance <= soundRadius;
+        if (nowInSoundRange != isInSoundRange)
         {
-            foreach (Collider2D collider2D in listCollider)
-            {
-                if (collider2D.gameObject.CompareTag("Cube"))
-                {
-                    isFound = true;
-                    cube = collider2D.gameObject;
-                    currentState = EnemyState.Attack;
-                    return;
-                }
-            }
-           
+            isInSoundRange = nowInSoundRange;
+
+            if (isInSoundRange)
+                AudioManager.Instance.UnPauseSfxLoop();
+            else
+                AudioManager.Instance.PauseSfxLoop();
+        }
+
+        // Gérer la détection de l’ennemi
+        if (!isFound && distance <= detectionRadius)
+        {
+            isFound = true;
+            currentState = EnemyState.Attack;
         }
     }
 
@@ -108,14 +117,14 @@ public class EnemyBehaviour : MonoBehaviour
 
     public void Died()
     {
-        AudioManager.Instance.PlayWalk(AudioManager.Instance.enemyDying);
+        AudioManager.Instance.PlaySfx(AudioManager.Instance.enemyDying);
         gameObject.SetActive(false);
     }
 
     public void TakeDamage()
     {
         anim.SetTrigger("Die");
-        AudioManager.Instance.PlayWalk(AudioManager.Instance.enemyGetHit);
+        AudioManager.Instance.PlaySfx(AudioManager.Instance.enemyGetHit);
     }
 
     
@@ -128,7 +137,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (isAttacking)
+        if (isAttacking &&  collider is BoxCollider2D)
         {
             if (collider.gameObject.CompareTag("Cube"))
             {

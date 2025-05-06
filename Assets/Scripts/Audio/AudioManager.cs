@@ -8,11 +8,11 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance { get; private set; }
     
     [Header("---------------Audio Sources---------------")]
-    [SerializeField] public AudioSource musicSource;
+    [SerializeField] public AudioSource MusicSource;
     [SerializeField] public AudioSource SFXSource;
-    [SerializeField] public AudioSource walkingSource;
+    [SerializeField] public AudioSource WalkingSource;
     [SerializeField] public AudioSource SFXLoopSource;
-    [SerializeField] public AudioMixer audioMixer;
+    [SerializeField] public AudioMixer AudioMixer;
 
     [Header("---------------Audio Clip---------------")]
     public AudioClip menuMusic;
@@ -68,16 +68,16 @@ public class AudioManager : MonoBehaviour
 
     public void ToggleMusic()
     {
-        musicSource.mute = !musicSource.mute ;
+        MusicSource.mute = !MusicSource.mute ;
     }
     
     public void PlayMusic(string sceneName,AudioClip clip )
     {
-        if (musicSource != null)
+        if (MusicSource != null)
         {
-                musicSource.clip = clip;
-                musicSource.loop = true; // Set the music to loop
-                musicSource.Play();
+                MusicSource.clip = clip;
+                MusicSource.loop = true; // Set the music to loop
+                MusicSource.Play();
         }               
         else
         {
@@ -92,14 +92,14 @@ public class AudioManager : MonoBehaviour
 
     public void PlayWalk(AudioClip clip)
     {
-        walkingSource.clip = clip;
-        walkingSource.loop = true;
-        walkingSource.Play();
+        WalkingSource.clip = clip;
+        WalkingSource.loop = true;
+        WalkingSource.Play();
     }
 
     public void StopWalking()
     {
-        walkingSource.Stop();
+        WalkingSource.Stop();
     }
 
     public void PlaySfxLoop(AudioClip clip)
@@ -107,5 +107,20 @@ public class AudioManager : MonoBehaviour
         SFXLoopSource.clip = clip;
         SFXLoopSource.loop = true;
         SFXLoopSource.Play();
+    }
+    
+    public void PauseSfxLoop()
+    {
+        SFXLoopSource.Pause();
+    }
+
+    public void UnPauseSfxLoop()
+    {
+        SFXLoopSource.UnPause();
+    }
+
+    public void PlayLocalizedSFX(AudioClip clip)
+    {
+        
     }
 }

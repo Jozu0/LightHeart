@@ -13,7 +13,7 @@ public class PlayerAction : MonoBehaviour
     public Transform cubeTransform;
     public GameObject cube;
     private Animator anim;
-    private PlayerAttack_Heal playerAttack_Heal;
+    public PlayerAttack_Heal playerAttack_Heal;
     void Start()
     {
         playerMove = GetComponent<PlayerMove>();
@@ -93,12 +93,21 @@ public class PlayerAction : MonoBehaviour
 
     }
 
-    public void CallInFrameToAttack(){
-        playerAttack_Heal.InFrameToAttack();
+    public void CallInFrameToAttackTrue(){
+        playerAttack_Heal.SetAttackFrameState(true);
     }
 
-    public void CallInFrameToHeal(){
-        playerAttack_Heal.InFrameToHeal();
+    public void CallInFrameToHealTrue(){
+        playerAttack_Heal.SetHealFrameState(true);
+    }
+
+    
+    public void CallInFrameToAttackFalse(){
+        playerAttack_Heal.SetAttackFrameState(false);
+    }
+
+    public void CallInFrameToHealFalse(){
+        playerAttack_Heal.SetHealFrameState(false);
     }
 
 }

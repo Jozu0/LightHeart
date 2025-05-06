@@ -14,7 +14,7 @@ public class VolumeScript : MonoBehaviour
     [SerializeField] private GameObject player;
     [SerializeField] private LightDetection lightDetection;
     
-    void Start()
+    void Awake()
     {
         volume.profile.TryGet<FilmGrain>(out grain);
         grain.texture.Override(darkSp); 

@@ -59,15 +59,12 @@ public class PlayerMove : MonoBehaviour
 
         if (shouldWalk && !isWalking)
         {
-            // on démarre la marche
             AudioManager.Instance.PlayWalk(AudioManager.Instance.walk);
             isWalking = true;
         }
         else if (!shouldWalk && isWalking)
         {
-            // on arrête la marche
             AudioManager.Instance.StopWalking();
-            Debug.Log("là il marche PAS hein");
             isWalking = false;
         }
     }
