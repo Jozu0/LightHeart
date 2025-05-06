@@ -23,10 +23,11 @@ using UnityEngine.Rendering.Universal;
         private bool playerIsInTheDark;
         private Sequence currentSequence;
         public bool isPushedLightDetect;
-
+        [SerializeField] private Scene_Switch sceneSwitch;
         void Start()
         {
             m_LastDetection = 0;
+            sceneSwitch = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Scene_Switch>();
             if (gameObject.CompareTag("Player"))
             {
                 volumeScript = GameObject.FindGameObjectWithTag("Volume").GetComponent<VolumeScript>();
@@ -103,14 +104,16 @@ using UnityEngine.Rendering.Universal;
 
                 currentSequence.OnComplete(() =>
                 {
-                    
+                    AudioManager.Instance.PauseSfxLoop();
+                    AudioManager.Instance.PlaySfx(AudioManager.Instance.death);
+                    sceneSwitch.sceneSwitch("MainMenuScene");
                 });
             }
             else if (!IsColorApproximately(colorSum, noColor) && playerIsInTheDark)
             {
                 playerIsInTheDark = false;
 
-                currentSequence?.Kill(); // ⛔ kill animation en cours
+                currentSequence?.Kill();
 
                 currentSequence = DOTween.Sequence();
                 currentSequence.Join(DOTween.To(

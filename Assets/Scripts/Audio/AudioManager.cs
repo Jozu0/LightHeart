@@ -32,7 +32,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip randomScaryNoise2;
     public AudioClip doorOpen;
     public AudioClip pressurePlateActivate;
-    public AudioClip caveNoise; 
+    public AudioClip caveNoise;
+    public AudioClip click;
     
     private string currentScene = "";
 

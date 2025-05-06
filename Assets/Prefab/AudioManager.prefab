@@ -53,7 +53,7 @@ MonoBehaviour:
   WalkingSource: {fileID: 3608630073774352403}
   SFXLoopSource: {fileID: 653848524063362191}
   AudioMixer: {fileID: 24100000, guid: b2c6dca74dfcdd740b8cd274803599a3, type: 2}
-  menuMusic: {fileID: 0}
+  menuMusic: {fileID: 8300000, guid: 77c8768e4dce7ce49a128a78bfcb917d, type: 3}
   backgroundNoise: {fileID: 8300000, guid: c47aacd0d550e054cbac65b74fa18d61, type: 3}
   death: {fileID: 8300000, guid: 1f240b3c8c95e954fbccf54e2d9024ee, type: 3}
   walk: {fileID: 8300000, guid: 3abeb792f8721ff418da11b98852d62b, type: 3}
@@ -71,6 +71,7 @@ MonoBehaviour:
   doorOpen: {fileID: 8300000, guid: 98e004fe224e7774cafdd13bf538bd02, type: 3}
   pressurePlateActivate: {fileID: 8300000, guid: e3642f01e7c36e44985c613f934bd601, type: 3}
   caveNoise: {fileID: 8300000, guid: c7b1c5504914caf4e8d5c8e470ab0e0e, type: 3}
+  click: {fileID: 8300000, guid: 36b76f3f06cb24840bca430a43143789, type: 3}
 --- !u!82 &4023251930027504508
 AudioSource:
   m_ObjectHideFlags: 0
