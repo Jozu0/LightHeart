@@ -6,6 +6,7 @@ public class Scene_Switch : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void sceneSwitch(string sceneName)
     {
+        Time.timeScale = 1;
         SceneManager.LoadScene(sceneName);
     }
 
@@ -18,5 +19,15 @@ public class Scene_Switch : MonoBehaviour
                 UnityEditor.EditorApplication.isPlaying = false;
         #endif
     }
-    
+
+
+    public void Pause()
+    {
+        Time.timeScale = 0;
+    }
+
+    public void Resume()
+    {
+        Time.timeScale = 1;
+    }
 }

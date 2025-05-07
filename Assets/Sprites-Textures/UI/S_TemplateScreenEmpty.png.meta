@@ -1,55 +1,55 @@
 fileFormatVersion: 2
-guid: 88ca2e743826003429612bf8eff59458
+guid: 8c38e08ece4c64d499e9244b86085d1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3078623180996536074
-    second: "\xE9cran blanc_0"
+      213: -9194843903610455420
+    second: S_TemplateScreenEmpty_0
   - first:
-      213: -5661393275600371203
-    second: "\xE9cran blanc_1"
+      213: 4415333924605316457
+    second: S_TemplateScreenEmpty_1
   - first:
-      213: -1670970031047500131
-    second: "\xE9cran blanc_2"
+      213: 987835134112155115
+    second: S_TemplateScreenEmpty_2
   - first:
-      213: -1835984127500957115
-    second: "\xE9cran blanc_3"
+      213: -4449444290912393247
+    second: S_TemplateScreenEmpty_3
   - first:
-      213: -5268256769689883210
-    second: "\xE9cran blanc_4"
+      213: -6145818908479073996
+    second: S_TemplateScreenEmpty_4
   - first:
-      213: -4614230688285757386
-    second: "\xE9cran blanc_5"
+      213: -4550187033928074586
+    second: S_TemplateScreenEmpty_5
   - first:
-      213: 1683330129811708655
-    second: "\xE9cran blanc_6"
+      213: 4470924362667960617
+    second: S_TemplateScreenEmpty_6
   - first:
-      213: -9122757028706832700
-    second: "\xE9cran blanc_7"
+      213: -6206877458143655492
+    second: S_TemplateScreenEmpty_7
   - first:
-      213: 5523636528570984395
-    second: "\xE9cran blanc_8"
+      213: 3701119797698067406
+    second: S_TemplateScreenEmpty_8
   - first:
-      213: -3033461724270115539
-    second: "\xE9cran blanc_9"
+      213: -5644935138176173443
+    second: S_TemplateScreenEmpty_9
   - first:
-      213: 3653705666142180425
-    second: "\xE9cran blanc_10"
+      213: -1933154270353078194
+    second: S_TemplateScreenEmpty_10
   - first:
-      213: 3606235684716272591
-    second: "\xE9cran blanc_11"
+      213: -4597846749759995560
+    second: S_TemplateScreenEmpty_11
   - first:
-      213: -4551088318686791455
-    second: "\xE9cran blanc_12"
+      213: 1269256142170754899
+    second: S_TemplateScreenEmpty_12
   - first:
-      213: 3416667864464453248
-    second: "\xE9cran blanc_13"
+      213: 136946829766018547
+    second: S_TemplateScreenEmpty_13
   - first:
-      213: 8017649528449373128
-    second: "\xE9cran blanc_14"
+      213: 1330685728508038564
+    second: S_TemplateScreenEmpty_14
   - first:
-      213: -7541058495759069903
-    second: "\xE9cran blanc_15"
+      213: 2377632242063940771
+    second: S_TemplateScreenEmpty_15
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -117,7 +117,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -141,11 +141,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "\xE9cran blanc_0"
+      name: S_TemplateScreenEmpty_0
       rect:
         serializedVersion: 2
         x: 21
@@ -160,14 +173,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a07e49cc87779ba20800000000000000
-      internalID: 3078623180996536074
+      spriteID: 48af120af2a556080800000000000000
+      internalID: -9194843903610455420
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_1"
+      name: S_TemplateScreenEmpty_1
       rect:
         serializedVersion: 2
         x: 213
@@ -182,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: df10e0aafc0be61b0800000000000000
-      internalID: -5661393275600371203
+      spriteID: 96dc4dc9fca664d30800000000000000
+      internalID: 4415333924605316457
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_2"
+      name: S_TemplateScreenEmpty_2
       rect:
         serializedVersion: 2
         x: 405
@@ -204,14 +217,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d9e17152c958fc8e0800000000000000
-      internalID: -1670970031047500131
+      spriteID: be5c76912de75bd00800000000000000
+      internalID: 987835134112155115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_3"
+      name: S_TemplateScreenEmpty_3
       rect:
         serializedVersion: 2
         x: 597
@@ -226,14 +239,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 54acc0bd9264586e0800000000000000
-      internalID: -1835984127500957115
+      spriteID: 1e7e648ddf56042c0800000000000000
+      internalID: -4449444290912393247
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_4"
+      name: S_TemplateScreenEmpty_4
       rect:
         serializedVersion: 2
         x: 21
@@ -248,14 +261,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6bd6611616463e6b0800000000000000
-      internalID: -5268256769689883210
+      spriteID: 431d932c34aa5baa0800000000000000
+      internalID: -6145818908479073996
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_5"
+      name: S_TemplateScreenEmpty_5
       rect:
         serializedVersion: 2
         x: 213
@@ -270,14 +283,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6307501e2a5f6ffb0800000000000000
-      internalID: -4614230688285757386
+      spriteID: 6aaf025200d7ad0c0800000000000000
+      internalID: -4550187033928074586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_6"
+      name: S_TemplateScreenEmpty_6
       rect:
         serializedVersion: 2
         x: 405
@@ -292,14 +305,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fea932b95d36c5710800000000000000
-      internalID: 1683330129811708655
+      spriteID: 929a676150aeb0e30800000000000000
+      internalID: 4470924362667960617
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_7"
+      name: S_TemplateScreenEmpty_7
       rect:
         serializedVersion: 2
         x: 597
@@ -314,14 +327,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4ce2bbb11d4756180800000000000000
-      internalID: -9122757028706832700
+      spriteID: cb9c7f656ddbcd9a0800000000000000
+      internalID: -6206877458143655492
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_8"
+      name: S_TemplateScreenEmpty_8
       rect:
         serializedVersion: 2
         x: 21
@@ -336,14 +349,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bc768d14826e7ac40800000000000000
-      internalID: 5523636528570984395
+      spriteID: ecb75fcb8d40d5330800000000000000
+      internalID: 3701119797698067406
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_9"
+      name: S_TemplateScreenEmpty_9
       rect:
         serializedVersion: 2
         x: 213
@@ -358,14 +371,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: d25c22d32aaf6e5d0800000000000000
-      internalID: -3033461724270115539
+      spriteID: d7a73e4666929a1b0800000000000000
+      internalID: -5644935138176173443
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_10"
+      name: S_TemplateScreenEmpty_10
       rect:
         serializedVersion: 2
         x: 405
@@ -380,14 +393,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9449c38f1f194b230800000000000000
-      internalID: 3653705666142180425
+      spriteID: e484393fe6e0c25e0800000000000000
+      internalID: -1933154270353078194
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_11"
+      name: S_TemplateScreenEmpty_11
       rect:
         serializedVersion: 2
         x: 597
@@ -402,14 +415,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: fcbd9d3af3ceb0230800000000000000
-      internalID: 3606235684716272591
+      spriteID: 8510fd4ddba2130c0800000000000000
+      internalID: -4597846749759995560
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_12"
+      name: S_TemplateScreenEmpty_12
       rect:
         serializedVersion: 2
         x: 21
@@ -424,14 +437,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1e87e3f694947d0c0800000000000000
-      internalID: -4551088318686791455
+      spriteID: 35f021b8cbd4d9110800000000000000
+      internalID: 1269256142170754899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_13"
+      name: S_TemplateScreenEmpty_13
       rect:
         serializedVersion: 2
         x: 213
@@ -446,14 +459,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 08e65e802517a6f20800000000000000
-      internalID: 3416667864464453248
+      spriteID: 3f5c1558a6886e100800000000000000
+      internalID: 136946829766018547
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_14"
+      name: S_TemplateScreenEmpty_14
       rect:
         serializedVersion: 2
         x: 405
@@ -468,14 +481,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8c39dcc44c9644f60800000000000000
-      internalID: 8017649528449373128
+      spriteID: 4ad476bae9b877210800000000000000
+      internalID: 1330685728508038564
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: "\xE9cran blanc_15"
+      name: S_TemplateScreenEmpty_15
       rect:
         serializedVersion: 2
         x: 597
@@ -490,8 +503,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13dc6d99047c85790800000000000000
-      internalID: -7541058495759069903
+      spriteID: 3ac9cba4deb0ff020800000000000000
+      internalID: 2377632242063940771
       vertices: []
       indices: 
       edges: []
@@ -510,22 +523,22 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "\xE9cran blanc_0": 3078623180996536074
-      "\xE9cran blanc_1": -5661393275600371203
-      "\xE9cran blanc_10": 3653705666142180425
-      "\xE9cran blanc_11": 3606235684716272591
-      "\xE9cran blanc_12": -4551088318686791455
-      "\xE9cran blanc_13": 3416667864464453248
-      "\xE9cran blanc_14": 8017649528449373128
-      "\xE9cran blanc_15": -7541058495759069903
-      "\xE9cran blanc_2": -1670970031047500131
-      "\xE9cran blanc_3": -1835984127500957115
-      "\xE9cran blanc_4": -5268256769689883210
-      "\xE9cran blanc_5": -4614230688285757386
-      "\xE9cran blanc_6": 1683330129811708655
-      "\xE9cran blanc_7": -9122757028706832700
-      "\xE9cran blanc_8": 5523636528570984395
-      "\xE9cran blanc_9": -3033461724270115539
+      S_TemplateScreenEmpty_0: -9194843903610455420
+      S_TemplateScreenEmpty_1: 4415333924605316457
+      S_TemplateScreenEmpty_10: -1933154270353078194
+      S_TemplateScreenEmpty_11: -4597846749759995560
+      S_TemplateScreenEmpty_12: 1269256142170754899
+      S_TemplateScreenEmpty_13: 136946829766018547
+      S_TemplateScreenEmpty_14: 1330685728508038564
+      S_TemplateScreenEmpty_15: 2377632242063940771
+      S_TemplateScreenEmpty_2: 987835134112155115
+      S_TemplateScreenEmpty_3: -4449444290912393247
+      S_TemplateScreenEmpty_4: -6145818908479073996
+      S_TemplateScreenEmpty_5: -4550187033928074586
+      S_TemplateScreenEmpty_6: 4470924362667960617
+      S_TemplateScreenEmpty_7: -6206877458143655492
+      S_TemplateScreenEmpty_8: 3701119797698067406
+      S_TemplateScreenEmpty_9: -5644935138176173443
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
