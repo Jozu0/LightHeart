@@ -30,4 +30,24 @@ public class Scene_Switch : MonoBehaviour
     {
         Time.timeScale = 1;
     }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            Debug.Log(other.gameObject.name);
+            switch (SceneManager.GetActiveScene().name)
+            {
+                case "Level1":
+                    SceneManager.LoadScene("Level2");
+                    break;
+                case "Level2":
+                    SceneManager.LoadScene("Level3");
+                    break;
+                case "Level3":
+                    SceneManager.LoadScene("MainMenuScene");
+                    break;
+            }       
+        }
+    }
 }

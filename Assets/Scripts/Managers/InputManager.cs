@@ -14,10 +14,6 @@ public class InputManager : MonoBehaviour
             if (playerInput == null)
             {
                 playerInput = FindFirstObjectByType<PlayerInput>();
-                if (playerInput == null)
-                {
-                    Debug.LogError("Missing PlayerInput in the scene");
-                }
             }
             return playerInput;
         }
