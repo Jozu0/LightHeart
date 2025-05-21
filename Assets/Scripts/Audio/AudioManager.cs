@@ -63,6 +63,7 @@ public class AudioManager : MonoBehaviour
             if (sceneName == "MainMenuScene")
             {
                 PlayMusic(sceneName,menuMusic);
+                AudioManager.Instance.PauseSfxLoop();
 
             }else
             {

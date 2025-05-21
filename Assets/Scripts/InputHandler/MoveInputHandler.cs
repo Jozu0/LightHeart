@@ -40,7 +40,7 @@ public class MoveInputHandler : InputHandler
         }
         else
         {
-            Debug.LogError("PlayerController non assigné dans MovementInputHandler");
+            Debug.LogError("PlayerController non assignï¿½ dans MovementInputHandler");
         }
     }
 

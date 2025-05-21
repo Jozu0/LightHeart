@@ -47,6 +47,7 @@ public class EnemyBehaviour : MonoBehaviour
     {
         AudioManager.Instance.PlaySfxLoop(AudioManager.Instance.enemyClap);
         cube = GameObject.FindGameObjectWithTag("Cube");
+        
     }
     private void Update()
     {
